@@ -3,31 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buys Construction LLC | Custom Construction in Brookings, SD</title>
-<meta name="description" content="Buys Construction LLC provides trusted residential and commercial construction in Brookings, SD and the surrounding region. Request a quote today.">
+<title>Wagner Contracting | Concrete Contractor in Brookings, SD</title>
+<meta name="description" content="Wagner Contracting is a concrete contractor serving Brookings, SD and the surrounding area — driveways, patios, foundations, flatwork, and commercial concrete. Rated 5.0 stars on Google. Call (605) 690-9058 for a quote.">
 <meta name="robots" content="index, follow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!--
   ============================================================
   DEVELOPER NOTES (remove before/after client review)
-  1. HOURS: Only "closes 5 PM, opens 8 AM" was provided. This build
-     assumes Mon–Fri, 8:00 AM–5:00 PM, closed Sat/Sun, as a
-     placeholder. CONFIRM full weekly hours with the client and
-     update both the visible Hours block (search "HOURS-DISPLAY")
-     and the JSON-LD "openingHoursSpecification" (search "HOURS-SCHEMA")
+  1. FORM BACKEND: The quote form posts to Web3Forms using a live
+     access key already in the hidden "access_key" input. Confirm
+     that key is still valid/active in the Web3Forms dashboard
      before publishing.
-  2. PHOTOGRAPHY: All hero/section imagery is abstract/geometric
-     CSS + SVG placeholder art (no stock photos used). Search
-     "PHOTO PLACEHOLDER" for each spot where real project photography,
-     a team photo, and a completed-project gallery should be swapped in.
-  3. FORM BACKEND: The quote request form currently only validates
-     client-side and shows a confirmation message — no email/CRM
-     endpoint was provided. Before launch, wire the form's JS submit
-     handler (search "FORM SUBMIT HANDLER") to a real backend such as
-     Formspree, a Vercel serverless function, or the client's CRM.
-  4. NO fabricated ratings, review counts, years-in-business, license
-     numbers, or named past projects appear anywhere on this page,
-     per instructions — only confirmed business information was used.
+  2. HOURS: Only "open, closes 5 PM (today)" was available at build
+     time. Full weekly hours were not provided/confirmed, so no
+     hours block or openingHoursSpecification appears anywhere on
+     this page. Add one only once full hours are confirmed with
+     the client.
+  3. PHOTOGRAPHY: All imagery is CSS/SVG-based (grain texture, line
+     icons, abstract map graphic) — no stock photos used. Search
+     "PHOTO PLACEHOLDER" for spots where real jobsite/team/finished
+     -project photography should be swapped in.
+  4. No fabricated years-in-business, licensing, insurance, or
+     certifications appear anywhere, per instructions — only
+     confirmed business information and the three provided Google
+     reviews were used.
   ============================================================
 -->
 
@@ -35,97 +38,147 @@
 {
   "@context": "https://schema.org",
   "@type": "GeneralContractor",
-  "name": "Buys Construction LLC",
+  "name": "Wagner Contracting",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "1804 9th Avenue South",
+    "streetAddress": "114 1st St S",
     "addressLocality": "Brookings",
     "addressRegion": "SD",
     "postalCode": "57006",
     "addressCountry": "US"
   },
-  "telephone": "+1-605-690-0285",
+  "telephone": "+1-605-690-9058",
   "areaServed": {
     "@type": "Place",
-    "name": "Brookings, SD and surrounding region"
+    "name": "Brookings, SD and surrounding area"
   },
-  "openingHoursSpecification": [
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "3"
+  },
+  "review": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "08:00",
-      "closes": "17:00"
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Jason Nixon" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Matt and his crew were great. Really good communication and the work was professionally done. Exceeded expectations and would highly recommend them for concrete work."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Michael Siegel" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Matt and his crew have done an excellent job for us on our restaurant buildout. Professional, conscientious, timely, organized, neat, and efficient are all words I would use to describe them."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Peter Sandager" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "Awesome experience from start to finish with Matt and his team. Clear transparent pricing, great communication, and exceeded our expectations for our new patio."
     }
   ]
 }
 </script>
-<!-- HOURS-SCHEMA: verify days/times above against client-confirmed hours before publishing -->
 
 <style>
   :root{
-    --black: #0b0a08;
-    --charcoal: #17150f;
-    --charcoal-2: #1f1c15;
-    --line: rgba(197,160,89,0.22);
-    --gold: #c5a059;
-    --gold-bright: #e2bd77;
-    --ivory: #ece7db;
-    --ivory-dim: #a8a293;
-    --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-    --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+    --charcoal-900:#1a1a1a;
+    --charcoal-850:#1f1f1f;
+    --charcoal-800:#232323;
+    --charcoal-700:#2b2b2b;
+    --concrete:#8f8d87;
+    --concrete-line:#4a4a46;
+    --concrete-pale:#e9e7e1;
+    --concrete-pale-2:#dedbd3;
+    --steel:#4a7fa5;
+    --steel-bright:#71a6cc;
+    --white:#f5f4f1;
+    --ink:#1a1a1a;
+    --sans-head:"Archivo", "Helvetica Neue", Arial, sans-serif;
+    --sans-body:"Inter", "Helvetica Neue", Arial, sans-serif;
   }
 
   *{box-sizing:border-box; margin:0; padding:0;}
   html{scroll-behavior:smooth;}
   body{
-    background:var(--black);
-    color:var(--ivory);
-    font-family:var(--sans);
+    background:var(--charcoal-900);
+    color:var(--white);
+    font-family:var(--sans-body);
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
   }
-
-  img{max-width:100%; display:block;}
+  img,svg{max-width:100%; display:block;}
   a{color:inherit;}
+  ul{list-style:none;}
 
   .wrap{
-    max-width:1180px;
+    max-width:1200px;
     margin:0 auto;
-    padding:0 6vw;
+    padding:0 1.5rem;
   }
+  @media (min-width:700px){ .wrap{padding:0 3rem;} }
 
   h1,h2,h3{
-    font-family:var(--serif);
-    font-weight:600;
-    letter-spacing:0.01em;
-    color:var(--ivory);
+    font-family:var(--sans-head);
+    font-weight:800;
+    letter-spacing:-0.01em;
+    line-height:1.08;
   }
 
   .eyebrow{
-    font-family:var(--sans);
+    font-family:var(--sans-body);
+    font-weight:700;
     text-transform:uppercase;
-    letter-spacing:0.28em;
+    letter-spacing:0.22em;
     font-size:0.72rem;
-    color:var(--gold);
+    color:var(--steel-bright);
     display:inline-flex;
     align-items:center;
-    gap:0.8em;
+    gap:0.7em;
   }
   .eyebrow::before{
     content:"";
-    width:28px;
-    height:1px;
-    background:var(--gold);
+    width:24px;
+    height:2px;
+    background:var(--steel);
     display:inline-block;
   }
+  .on-light .eyebrow{color:var(--steel);}
 
   .rule{
-    width:56px;
-    height:1px;
-    background:linear-gradient(90deg, var(--gold), transparent);
-    margin:1.4rem 0;
+    width:48px;
+    height:2px;
+    background:var(--steel);
+    margin:1.2rem 0;
   }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.6rem;
+    padding:0.95rem 1.7rem;
+    font-family:var(--sans-head);
+    font-size:0.82rem;
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    text-decoration:none;
+    border:2px solid transparent;
+    border-radius:2px;
+    transition:all 0.25s ease;
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  .btn-steel{ background:var(--steel); color:#fff; border-color:var(--steel); }
+  .btn-steel:hover{ background:var(--steel-bright); border-color:var(--steel-bright); transform:translateY(-2px); }
+  .btn-outline{ border-color:rgba(245,244,241,0.35); color:var(--white); }
+  .btn-outline:hover{ border-color:var(--steel-bright); color:var(--steel-bright); }
+  .btn-outline.on-light{ border-color:rgba(26,26,26,0.35); color:var(--ink); }
+  .btn-outline.on-light:hover{ border-color:var(--steel); color:var(--steel); }
+  .btn:disabled{ opacity:0.6; cursor:not-allowed; transform:none; }
 
   /* ---------- Header ---------- */
   header{
@@ -135,54 +188,48 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:1.4rem 6vw;
-    background:linear-gradient(180deg, rgba(11,10,8,0.92), rgba(11,10,8,0));
-    transition:background 0.4s ease, padding 0.4s ease, backdrop-filter 0.4s ease;
+    padding:1.1rem 1.5rem;
+    background:linear-gradient(180deg, rgba(26,26,26,0.94), rgba(26,26,26,0));
+    transition:background 0.35s ease, padding 0.35s ease, backdrop-filter 0.35s ease, border-color 0.35s ease;
+    border-bottom:1px solid transparent;
   }
   header.scrolled{
-    background:rgba(11,10,8,0.86);
+    background:rgba(26,26,26,0.92);
     backdrop-filter:blur(10px);
-    padding:1rem 6vw;
-    border-bottom:1px solid var(--line);
+    padding:0.85rem 1.5rem;
+    border-bottom-color:var(--concrete-line);
   }
+  @media (min-width:700px){ header, header.scrolled{padding-left:3rem; padding-right:3rem;} }
   .brand{
-    font-family:var(--serif);
-    font-size:1.25rem;
-    letter-spacing:0.05em;
+    font-family:var(--sans-head);
+    font-weight:800;
+    font-size:1.05rem;
+    letter-spacing:0.02em;
+    text-transform:uppercase;
     text-decoration:none;
-    color:var(--ivory);
-  }
-  .brand span{color:var(--gold);}
-  nav.primary{
+    color:var(--white);
     display:flex;
-    align-items:center;
-    gap:2.2rem;
+    align-items:baseline;
+    gap:0.4rem;
+    white-space:nowrap;
   }
+  .brand span{color:var(--steel-bright);}
+  nav.primary{ display:flex; align-items:center; gap:1.8rem; }
   nav.primary a.navlink{
     text-decoration:none;
-    font-size:0.82rem;
+    font-size:0.8rem;
+    font-weight:600;
     text-transform:uppercase;
-    letter-spacing:0.14em;
-    color:var(--ivory-dim);
+    letter-spacing:0.1em;
+    color:var(--concrete);
     transition:color 0.25s ease;
   }
-  nav.primary a.navlink:hover{color:var(--gold-bright);}
-  .header-cta{
-    display:inline-flex;
-    align-items:center;
-    gap:0.5rem;
-    text-decoration:none;
-    border:1px solid var(--gold);
-    color:var(--gold-bright);
-    padding:0.55rem 1.2rem;
-    font-size:0.78rem;
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    transition:background 0.25s ease, color 0.25s ease;
-  }
-  .header-cta:hover{background:var(--gold); color:var(--black);}
-  @media (max-width:820px){
-    nav.primary a.navlink{display:none;}
+  nav.primary a.navlink:hover{color:var(--steel-bright);}
+  .header-cta{ padding:0.7rem 1.3rem; font-size:0.76rem; }
+  @media (max-width:880px){ nav.primary a.navlink{display:none;} }
+  @media (max-width:480px){
+    .brand{ font-size:0.82rem; }
+    .header-cta{ padding:0.6rem 0.9rem; font-size:0.68rem; }
   }
 
   /* ---------- Hero ---------- */
@@ -191,388 +238,214 @@
     min-height:100svh;
     display:flex;
     align-items:center;
-    padding-top:6rem;
+    padding:7.5rem 0 4rem;
     overflow:hidden;
-    border-bottom:1px solid var(--line);
-  }
-  .hero-bg{
-    position:absolute;
-    inset:0;
-    z-index:0;
     background:
-      radial-gradient(ellipse at 78% 18%, rgba(197,160,89,0.10), transparent 55%),
-      radial-gradient(ellipse at 10% 90%, rgba(197,160,89,0.06), transparent 50%),
-      linear-gradient(160deg, #0b0a08 0%, #141210 55%, #0b0a08 100%);
+      radial-gradient(ellipse at 82% 12%, rgba(74,127,165,0.14), transparent 55%),
+      linear-gradient(165deg, #1c1c1c 0%, #161616 60%, #1a1a1a 100%);
   }
-  /* PHOTO PLACEHOLDER: swap this SVG line-art for a full-bleed hero photograph
-     (e.g. a striking exterior shot of a completed build) when available. */
-  .hero-lines{
-    position:absolute; inset:0; z-index:1; opacity:0.5;
+  .hero::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    mix-blend-mode:overlay;
+    opacity:0.9;
     pointer-events:none;
   }
-  .hero-lines svg{width:100%; height:100%;}
-  .hero-inner{
-    position:relative;
-    z-index:2;
-    width:100%;
-  }
-  .hero-grid{
-    display:grid;
-    grid-template-columns:1.1fr 0.9fr;
-    gap:3rem;
-    align-items:end;
-  }
-  .hero h1{
-    font-size:clamp(2.8rem, 7vw, 5.6rem);
-    line-height:1.02;
-    letter-spacing:0.005em;
-  }
-  .hero h1 em{
-    font-style:normal;
-    color:var(--gold-bright);
-  }
-  .hero-sub{
-    font-size:1.05rem;
-    color:var(--ivory-dim);
-    max-width:32ch;
-    margin-top:1.3rem;
-  }
-  .hero-side{
-    border-left:1px solid var(--line);
-    padding-left:2rem;
-  }
-  .hero-side p{
-    color:var(--ivory-dim);
-    font-size:0.95rem;
-    max-width:34ch;
-  }
-  .cta-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:1rem;
-    margin-top:2.4rem;
-  }
-  .btn{
+  .hero-lines{ position:absolute; inset:0; z-index:0; opacity:0.5; pointer-events:none; }
+  .hero-inner{ position:relative; z-index:2; width:100%; }
+  .rating-badge{
     display:inline-flex;
     align-items:center;
     gap:0.6rem;
-    padding:1rem 1.8rem;
-    font-size:0.82rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    text-decoration:none;
-    transition:all 0.28s ease;
-    border:1px solid transparent;
+    background:rgba(245,244,241,0.06);
+    border:1px solid var(--concrete-line);
+    padding:0.5rem 0.9rem;
+    border-radius:2px;
+    margin-bottom:1.6rem;
   }
-  .btn-gold{
-    background:var(--gold);
-    color:var(--black);
+  .rating-badge .stars{ color:var(--steel-bright); font-size:0.95rem; letter-spacing:0.1em; }
+  .rating-badge span.txt{ font-size:0.8rem; color:var(--concrete); font-weight:600; }
+  .hero h1{
+    font-size:clamp(2.3rem, 7vw, 4.6rem);
+    max-width:14ch;
   }
-  .btn-gold:hover{background:var(--gold-bright); transform:translateY(-2px);}
-  .btn-outline{
-    border-color:var(--line);
-    color:var(--ivory);
+  .hero h1 em{ font-style:normal; color:var(--steel-bright); }
+  .hero-sub{
+    font-size:clamp(1rem, 2vw, 1.15rem);
+    color:var(--concrete);
+    max-width:46ch;
+    margin-top:1.4rem;
   }
-  .btn-outline:hover{border-color:var(--gold); color:var(--gold-bright);}
+  .cta-row{ display:flex; flex-wrap:wrap; gap:1rem; margin-top:2.2rem; }
+  .hero-strip{
+    margin-top:3.5rem;
+    padding-top:1.8rem;
+    border-top:1px solid var(--concrete-line);
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.4rem;
+  }
+  @media (min-width:640px){ .hero-strip{ grid-template-columns:repeat(3,1fr); } }
+  .hero-strip .item{ font-size:0.85rem; color:var(--concrete); }
+  .hero-strip .item strong{ display:block; color:var(--white); font-family:var(--sans-head); font-size:1rem; margin-bottom:0.2rem; }
 
-  @media (max-width:900px){
-    .hero-grid{grid-template-columns:1fr;}
-    .hero-side{border-left:none; border-top:1px solid var(--line); padding-left:0; padding-top:1.4rem;}
-  }
-
-  .scroll-cue{
-    position:absolute;
-    bottom:2.2rem; left:6vw;
-    z-index:2;
-    display:flex; align-items:center; gap:0.8rem;
-    color:var(--ivory-dim);
-    font-size:0.72rem;
-    letter-spacing:0.2em;
-    text-transform:uppercase;
-  }
-  .scroll-cue::after{
-    content:"";
-    width:1px; height:34px;
-    background:linear-gradient(180deg, var(--gold), transparent);
-    animation:cue 2.2s ease-in-out infinite;
-  }
-  @keyframes cue{
-    0%{transform:scaleY(0.2); transform-origin:top;}
-    50%{transform:scaleY(1); transform-origin:top;}
-    51%{transform-origin:bottom;}
-    100%{transform:scaleY(0.2); transform-origin:bottom;}
-  }
-
-  /* ---------- Reveal animation ---------- */
-  .reveal{
-    opacity:0;
-    transform:translateY(28px);
-    transition:opacity 0.9s cubic-bezier(.16,.8,.24,1), transform 0.9s cubic-bezier(.16,.8,.24,1);
-  }
-  .reveal.in{
-    opacity:1;
-    transform:translateY(0);
-  }
-  .reveal-delay-1{transition-delay:0.12s;}
-  .reveal-delay-2{transition-delay:0.24s;}
-  .reveal-delay-3{transition-delay:0.36s;}
-
-  @media (prefers-reduced-motion: reduce){
-    .reveal{opacity:1; transform:none; transition:none;}
-    html{scroll-behavior:auto;}
-  }
+  /* ---------- Reveal ---------- */
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity 0.8s cubic-bezier(.16,.8,.24,1), transform 0.8s cubic-bezier(.16,.8,.24,1); }
+  .reveal.in{ opacity:1; transform:none; }
+  .reveal-delay-1{transition-delay:0.1s;}
+  .reveal-delay-2{transition-delay:0.2s;}
+  .reveal-delay-3{transition-delay:0.3s;}
+  @media (prefers-reduced-motion: reduce){ .reveal{opacity:1; transform:none; transition:none;} html{scroll-behavior:auto;} }
 
   /* ---------- Section shells ---------- */
-  section{
-    padding:7.5rem 0;
-    position:relative;
-  }
-  .section-head{
-    max-width:640px;
-    margin-bottom:3.5rem;
-  }
-  .section-head h2{
-    font-size:clamp(2rem, 4vw, 2.9rem);
-    margin-top:0.6rem;
-  }
+  section{ padding:5rem 0; position:relative; }
+  @media (min-width:700px){ section{ padding:7rem 0; } }
+  .section-head{ max-width:640px; margin-bottom:2.6rem; }
+  @media (min-width:700px){ .section-head{ margin-bottom:3.4rem; } }
+  .section-head h2{ font-size:clamp(1.9rem, 4.4vw, 2.7rem); margin-top:0.5rem; }
+
+  .on-light{ background:var(--concrete-pale); color:var(--ink); }
+  .on-light .hero-sub, .on-light p{ color:#4a4946; }
 
   /* ---------- About ---------- */
-  #about{
-    background:var(--charcoal);
-    border-bottom:1px solid var(--line);
-  }
-  .about-grid{
-    display:grid;
-    grid-template-columns:0.85fr 1.15fr;
-    gap:4rem;
-    align-items:center;
-  }
-  /* PHOTO PLACEHOLDER: swap for a portrait-orientation jobsite or team photo */
+  #about{ background:var(--charcoal-850); border-top:1px solid var(--concrete-line); border-bottom:1px solid var(--concrete-line); }
+  .about-grid{ display:grid; grid-template-columns:1fr; gap:2.4rem; align-items:center; }
+  @media (min-width:860px){ .about-grid{ grid-template-columns:0.85fr 1.15fr; gap:4rem; } }
+  /* PHOTO PLACEHOLDER: swap for a real jobsite or team photo */
   .about-visual{
-    aspect-ratio:4/5;
+    aspect-ratio:16/10;
     position:relative;
     background:
-      linear-gradient(155deg, #201c14 0%, #0e0c09 100%);
-    border:1px solid var(--line);
+      repeating-linear-gradient(135deg, #2b2b2b 0 2px, #262626 2px 4px),
+      linear-gradient(155deg, #262626 0%, #1c1c1c 100%);
+    border:1px solid var(--concrete-line);
   }
-  .about-visual svg{position:absolute; inset:0; width:100%; height:100%;}
-  .about-copy p{
-    color:var(--ivory-dim);
-    font-size:1.05rem;
-    max-width:52ch;
-    margin-bottom:1.1rem;
-  }
-  .about-copy p:last-child{margin-bottom:0;}
-  @media (max-width:860px){
-    .about-grid{grid-template-columns:1fr; gap:2.5rem;}
-    .about-visual{aspect-ratio:16/9;}
-  }
+  @media (min-width:860px){ .about-visual{ aspect-ratio:4/5; } }
+  .about-visual svg{ position:absolute; inset:0; width:100%; height:100%; }
+  .about-copy p{ color:var(--concrete); font-size:1.02rem; max-width:54ch; margin-bottom:1.1rem; }
+  .about-copy p:last-child{ margin-bottom:0; }
 
   /* ---------- Services ---------- */
+  #services{ background:var(--concrete-pale); color:var(--ink); }
+  #services .section-head p{ color:#5a5852; max-width:60ch; margin-top:0.8rem; font-size:1.02rem; }
   .services-grid{
     display:grid;
-    grid-template-columns:repeat(4, 1fr);
+    grid-template-columns:1fr;
     gap:1px;
-    background:var(--line);
-    border:1px solid var(--line);
+    background:var(--concrete-pale-2);
+    border:1px solid var(--concrete-pale-2);
   }
+  @media (min-width:640px){ .services-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (min-width:980px){ .services-grid{ grid-template-columns:repeat(3,1fr); } }
   .service-card{
-    background:var(--black);
-    padding:2.6rem 1.8rem;
+    background:var(--concrete-pale);
+    padding:2.2rem 1.7rem;
     display:flex;
     flex-direction:column;
     gap:0.9rem;
   }
-  .service-num{
-    font-family:var(--serif);
-    color:var(--gold);
-    font-size:1.1rem;
+  .service-icon{ width:34px; height:34px; color:var(--steel); }
+  .service-card h3{ font-size:1.15rem; font-weight:800; color:var(--ink); }
+  .service-card p{ color:#5a5852; font-size:0.92rem; }
+
+  /* ---------- Testimonials ---------- */
+  #testimonials{ background:var(--charcoal-900); }
+  .testi-rating{
+    display:inline-flex; align-items:center; gap:0.7rem;
+    margin-bottom:2.2rem;
   }
-  .service-card h3{
-    font-size:1.25rem;
-    font-weight:600;
+  .testi-rating .stars{ color:var(--steel-bright); font-size:1.1rem; letter-spacing:0.12em; }
+  .testi-rating span.txt{ color:var(--concrete); font-size:0.88rem; font-weight:600; }
+  .testi-grid{ display:grid; grid-template-columns:1fr; gap:1.4rem; }
+  @media (min-width:860px){ .testi-grid{ grid-template-columns:repeat(3,1fr); gap:1.6rem; } }
+  .testi-card{
+    background:var(--charcoal-800);
+    border:1px solid var(--concrete-line);
+    border-top:3px solid var(--steel);
+    padding:2rem 1.8rem;
+    display:flex;
+    flex-direction:column;
+    gap:1.1rem;
   }
-  .service-card p{
-    color:var(--ivory-dim);
-    font-size:0.92rem;
-  }
-  @media (max-width:980px){
-    .services-grid{grid-template-columns:repeat(2, 1fr);}
-  }
-  @media (max-width:560px){
-    .services-grid{grid-template-columns:1fr;}
-  }
+  .testi-card .stars{ color:var(--steel-bright); font-size:0.95rem; letter-spacing:0.12em; }
+  .testi-card blockquote{ font-size:0.98rem; color:var(--white); line-height:1.65; }
+  .testi-card cite{ font-style:normal; font-size:0.82rem; color:var(--concrete); font-weight:600; letter-spacing:0.02em; }
 
   /* ---------- Service Area ---------- */
-  #area{
-    background:var(--charcoal);
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
-  }
-  .area-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:4rem;
-    align-items:center;
-  }
-  /* PHOTO PLACEHOLDER: could be replaced with a simple embedded map or
-     custom-illustrated regional map graphic */
-  .area-visual{
-    aspect-ratio:1/1;
-    position:relative;
-    border:1px solid var(--line);
-    background:radial-gradient(circle at 50% 50%, rgba(197,160,89,0.08), transparent 60%);
-  }
-  .area-visual svg{width:100%; height:100%;}
-  .area-copy p{color:var(--ivory-dim); max-width:46ch; margin-bottom:1rem; font-size:1.02rem;}
-  .area-list{
-    list-style:none;
-    display:flex;
-    flex-wrap:wrap;
-    gap:0.6rem 0.9rem;
-    margin-top:1.6rem;
-  }
+  #area{ background:var(--concrete-pale); color:var(--ink); border-top:1px solid var(--concrete-pale-2); }
+  .area-grid{ display:grid; grid-template-columns:1fr; gap:2.4rem; align-items:center; }
+  @media (min-width:860px){ .area-grid{ grid-template-columns:1fr 1fr; gap:4rem; } }
+  .area-copy p{ color:#5a5852; max-width:46ch; margin-bottom:1rem; font-size:1.02rem; }
+  .area-list{ display:flex; flex-wrap:wrap; gap:0.6rem 0.9rem; margin-top:1.5rem; }
   .area-list li{
-    font-size:0.78rem;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    color:var(--gold-bright);
-    border:1px solid var(--line);
-    padding:0.5rem 0.9rem;
+    font-size:0.78rem; font-weight:700; letter-spacing:0.06em; text-transform:uppercase;
+    color:var(--steel); border:1px solid var(--steel); padding:0.5rem 0.9rem;
   }
-  @media (max-width:860px){
-    .area-grid{grid-template-columns:1fr; gap:2.5rem;}
-  }
+  .area-visual{ aspect-ratio:1/1; max-width:340px; margin:0 auto; position:relative; }
+  .area-visual svg{ width:100%; height:100%; }
 
   /* ---------- Contact ---------- */
-  #contact{
-    background:var(--black);
-  }
-  .contact-grid{
-    display:grid;
-    grid-template-columns:0.9fr 1.1fr;
-    gap:4rem;
-    align-items:start;
-  }
-  .info-block{margin-bottom:2.2rem;}
+  #contact{ background:var(--charcoal-900); border-top:1px solid var(--concrete-line); }
+  .contact-grid{ display:grid; grid-template-columns:1fr; gap:2.6rem; align-items:start; }
+  @media (min-width:900px){ .contact-grid{ grid-template-columns:0.85fr 1.15fr; gap:4rem; } }
+  .info-block{ margin-bottom:2rem; }
   .info-block h3{
-    font-size:0.75rem;
-    letter-spacing:0.2em;
-    text-transform:uppercase;
-    color:var(--gold);
-    font-family:var(--sans);
-    font-weight:500;
-    margin-bottom:0.6rem;
+    font-size:0.74rem; letter-spacing:0.18em; text-transform:uppercase;
+    color:var(--steel-bright); font-family:var(--sans-body); font-weight:700; margin-bottom:0.6rem;
   }
   .info-block .big-link{
-    font-family:var(--serif);
-    font-size:2.1rem;
-    text-decoration:none;
-    color:var(--ivory);
-    transition:color 0.25s ease;
+    font-family:var(--sans-head); font-weight:800; font-size:1.9rem;
+    text-decoration:none; color:var(--white); transition:color 0.25s ease;
   }
-  .info-block .big-link:hover{color:var(--gold-bright);}
-  .info-block p{color:var(--ivory-dim); font-size:0.98rem;}
+  .info-block .big-link:hover{ color:var(--steel-bright); }
+  .info-block p{ color:var(--concrete); font-size:0.98rem; }
 
-  form{
-    background:var(--charcoal);
-    border:1px solid var(--line);
-    padding:2.6rem;
-  }
-  .field{margin-bottom:1.4rem;}
+  form{ background:var(--charcoal-800); border:1px solid var(--concrete-line); padding:2rem; }
+  @media (min-width:700px){ form{ padding:2.4rem; } }
+  .field{ margin-bottom:1.3rem; }
   .field label{
-    display:block;
-    font-size:0.72rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--ivory-dim);
-    margin-bottom:0.5rem;
+    display:block; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--concrete); margin-bottom:0.5rem; font-weight:600;
   }
   .field input, .field textarea{
-    width:100%;
-    background:var(--black);
-    border:1px solid var(--line);
-    color:var(--ivory);
-    padding:0.85rem 1rem;
-    font-family:var(--sans);
-    font-size:0.95rem;
+    width:100%; background:var(--charcoal-900); border:1px solid var(--concrete-line);
+    color:var(--white); padding:0.8rem 0.95rem; font-family:var(--sans-body); font-size:0.95rem; border-radius:2px;
   }
-  .field input:focus, .field textarea:focus{
-    outline:none;
-    border-color:var(--gold);
+  .field input:focus, .field textarea:focus{ outline:none; border-color:var(--steel); }
+  .field textarea{ resize:vertical; min-height:110px; }
+  .submit-btn{ width:100%; border:none; }
+  .form-note{ font-size:0.8rem; color:var(--concrete); margin-top:0.9rem; text-align:center; }
+  .form-status{
+    display:none; border-radius:2px; padding:1.1rem 1.2rem; font-size:0.9rem; margin-top:1.2rem;
   }
-  .field textarea{resize:vertical; min-height:110px;}
-  .submit-btn{
-    width:100%;
-    border:none;
-    cursor:pointer;
-    background:var(--gold);
-    color:var(--black);
-    padding:1rem;
-    font-size:0.82rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    transition:background 0.25s ease;
-  }
-  .submit-btn:hover{background:var(--gold-bright);}
-  .form-note{
-    font-size:0.8rem;
-    color:var(--ivory-dim);
-    margin-top:0.9rem;
-    text-align:center;
-  }
-  .form-success{
-    display:none;
-    border:1px solid var(--gold);
-    color:var(--gold-bright);
-    padding:1.4rem;
-    font-size:0.92rem;
-    text-align:center;
-  }
-  .form-success.show{display:block;}
-  form.submitted .field, form.submitted .submit-btn, form.submitted .form-note{display:none;}
-
-  @media (max-width:900px){
-    .contact-grid{grid-template-columns:1fr; gap:2.5rem;}
-  }
+  .form-status.show{ display:block; }
+  .form-status.success{ border:1px solid var(--steel); background:rgba(74,127,165,0.12); color:var(--steel-bright); }
+  .form-status.error{ border:1px solid #a05050; background:rgba(160,80,80,0.12); color:#e0a0a0; }
+  /* honeypot field, hidden from real users */
+  .hp-field{ position:absolute; left:-9999px; top:-9999px; }
 
   /* ---------- Footer ---------- */
-  footer{
-    border-top:1px solid var(--line);
-    padding:3rem 0 2.4rem;
-    background:var(--black);
-  }
-  .footer-grid{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    gap:1.5rem;
-    align-items:center;
-  }
-  .footer-brand{
-    font-family:var(--serif);
-    font-size:1.15rem;
-  }
-  .footer-brand span{color:var(--gold);}
-  .footer-meta{
-    color:var(--ivory-dim);
-    font-size:0.85rem;
-    line-height:1.9;
-  }
-  .footer-meta a{text-decoration:none; color:var(--ivory-dim);}
-  .footer-meta a:hover{color:var(--gold-bright);}
+  footer{ border-top:1px solid var(--concrete-line); padding:2.6rem 0 2.2rem; background:var(--charcoal-900); }
+  .footer-grid{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:1.4rem; align-items:center; }
+  .footer-brand{ font-family:var(--sans-head); font-weight:800; text-transform:uppercase; font-size:1.02rem; }
+  .footer-brand span{ color:var(--steel-bright); }
+  .footer-meta{ color:var(--concrete); font-size:0.85rem; line-height:1.9; }
+  .footer-meta a{ text-decoration:none; color:var(--concrete); }
+  .footer-meta a:hover{ color:var(--steel-bright); }
 </style>
 </head>
 <body>
 
 <header id="siteHeader">
-  <a href="#top" class="brand">BUYS <span>CONSTRUCTION</span></a>
+  <a href="#top" class="brand">WAGNER <span>CONTRACTING</span></a>
   <nav class="primary">
     <a class="navlink" href="#about">About</a>
     <a class="navlink" href="#services">Services</a>
+    <a class="navlink" href="#testimonials">Reviews</a>
     <a class="navlink" href="#area">Service Area</a>
     <a class="navlink" href="#contact">Contact</a>
-    <a class="header-cta" href="tel:+16056900285">Call Now</a>
+    <a class="btn btn-steel header-cta" href="tel:+16056909058">Call Now</a>
   </nav>
 </header>
 
@@ -580,142 +453,176 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-lines" aria-hidden="true">
-      <!-- PHOTO PLACEHOLDER: decorative architectural line-art standing in
-           for a hero photograph; swap the whole .hero-bg / .hero-lines pair
-           for a full-bleed <img> of a completed project when available -->
+      <!-- PHOTO PLACEHOLDER: decorative structural line-art standing in for a
+           hero photograph; swap for a full-bleed image of a finished
+           driveway/patio/foundation pour when photography is available -->
       <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="#c5a059" stroke-width="1" fill="none" opacity="0.35">
-          <line x1="0" y1="120" x2="1440" y2="120"/>
-          <line x1="0" y1="780" x2="1440" y2="780"/>
-          <polyline points="120,900 120,300 520,300 520,80"/>
-          <polyline points="1440,650 980,650 980,220 1320,220 1320,0"/>
-          <rect x="1160" y="380" width="180" height="260"/>
-          <line x1="700" y1="0" x2="700" y2="900" stroke-dasharray="2 10" opacity="0.5"/>
+        <g stroke="#4a7fa5" stroke-width="1" fill="none" opacity="0.25">
+          <line x1="0" y1="140" x2="1440" y2="140"/>
+          <line x1="0" y1="760" x2="1440" y2="760"/>
+          <rect x="1080" y="380" width="260" height="380"/>
+          <line x1="1080" y1="380" x2="1340" y2="380"/>
+          <line x1="900" y1="0" x2="900" y2="900" stroke-dasharray="2 12" opacity="0.5"/>
         </g>
       </svg>
     </div>
 
     <div class="wrap hero-inner">
-      <div class="hero-grid">
-        <div>
-          <span class="eyebrow reveal in">Brookings, South Dakota</span>
-          <h1 class="reveal in reveal-delay-1">Built on<br><em>Craftsmanship.</em></h1>
-          <p class="hero-sub reveal in reveal-delay-2">
-            Buys Construction LLC delivers residential and commercial
-            construction across Brookings and the surrounding region —
-            grounded in careful work and a straightforward approach.
-          </p>
-          <div class="cta-row reveal in reveal-delay-3">
-            <a href="#contact" class="btn btn-gold">Request a Quote</a>
-            <a href="tel:+16056900285" class="btn btn-outline">Call (605) 690-0285</a>
-          </div>
-        </div>
-        <div class="hero-side reveal in reveal-delay-3">
-          <p>Residential and commercial projects, handled with the same
-          attention to detail from first conversation to final walkthrough.</p>
-        </div>
+      <div class="rating-badge reveal in" aria-label="5 out of 5 stars from 3 Google reviews">
+        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span class="txt">5.0 on Google &middot; 3 Reviews</span>
+      </div>
+      <h1 class="reveal in reveal-delay-1">Concrete work built to <em>last.</em></h1>
+      <p class="hero-sub reveal in reveal-delay-2">
+        Wagner Contracting is a concrete contractor serving Brookings, SD and
+        the surrounding area — driveways, patios, foundations, and flatwork,
+        backed by clear communication from quote to final finish.
+      </p>
+      <div class="cta-row reveal in reveal-delay-3">
+        <a href="#contact" class="btn btn-steel">Request a Quote</a>
+        <a href="tel:+16056909058" class="btn btn-outline">Call (605) 690-9058</a>
+      </div>
+      <div class="hero-strip reveal in reveal-delay-3">
+        <div class="item"><strong>Brookings, SD</strong>Based locally, serving the surrounding area</div>
+        <div class="item"><strong>Matt &amp; Crew</strong>Direct communication, start to finish</div>
+        <div class="item"><strong>5.0 &#9733; Rated</strong>3 reviews on Google, 100% five-star</div>
       </div>
     </div>
-
-    <div class="scroll-cue" aria-hidden="true">Scroll</div>
   </section>
 
-  <!-- ============ ABOUT ============ -->
+  <!-- ============ ABOUT / CREDIBILITY ============ -->
   <section id="about">
     <div class="wrap about-grid">
-      <div class="about-visual reveal" role="img" aria-label="Placeholder graphic representing Buys Construction's craftsmanship — to be replaced with a real jobsite or team photograph">
-        <!-- PHOTO PLACEHOLDER: replace SVG with real jobsite/team photo -->
-        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="400" height="500" fill="#14110c"/>
-          <g stroke="#c5a059" stroke-width="1" fill="none" opacity="0.55">
-            <line x1="40" y1="460" x2="40" y2="120"/>
-            <line x1="40" y1="120" x2="200" y2="40"/>
-            <line x1="200" y1="40" x2="360" y2="120"/>
-            <line x1="360" y1="120" x2="360" y2="460"/>
-            <line x1="40" y1="460" x2="360" y2="460"/>
-            <line x1="40" y1="120" x2="360" y2="120"/>
-            <line x1="200" y1="40" x2="200" y2="500" stroke-dasharray="2 8" opacity="0.4"/>
+      <div class="about-visual reveal" role="img" aria-label="Abstract structural graphic representing a concrete foundation outline, standing in for a real jobsite photo">
+        <!-- PHOTO PLACEHOLDER: replace with a real jobsite or crew photo -->
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g stroke="#4a7fa5" stroke-width="1.5" fill="none" opacity="0.65">
+            <rect x="60" y="60" width="280" height="280"/>
+            <line x1="60" y1="180" x2="340" y2="180"/>
+            <line x1="180" y1="60" x2="180" y2="340"/>
+            <circle cx="180" cy="180" r="60" stroke-dasharray="3 9" opacity="0.5"/>
           </g>
         </svg>
       </div>
       <div class="about-copy">
         <span class="eyebrow reveal">About</span>
         <div class="rule reveal"></div>
-        <h2 class="reveal">Trusted local craftsmanship.</h2>
+        <h2 class="reveal">Concrete work, communicated clearly.</h2>
         <p class="reveal reveal-delay-1">
-          Buys Construction LLC is a construction company based at 1804 9th
-          Avenue South in Brookings, South Dakota. We work with property
-          owners on residential and commercial projects, bringing a
-          steady, detail-oriented approach to every job.
+          Wagner Contracting is a concrete contractor based at 114 1st St S
+          in Brookings, South Dakota. Customers describe working with Matt
+          and the crew as professional, organized, and easy to reach —
+          from the first conversation through the final walkthrough.
         </p>
         <p class="reveal reveal-delay-2">
-          Our focus stays on clear communication and sound construction —
-          the kind of work that speaks for itself once it's finished.
+          Clear, transparent pricing and steady communication are what
+          clients consistently point to — the kind of reputation that's
+          earned one job at a time.
         </p>
       </div>
     </div>
   </section>
 
   <!-- ============ SERVICES ============ -->
-  <section id="services">
+  <section id="services" class="on-light">
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow reveal">Services</span>
-        <h2 class="reveal reveal-delay-1">Construction, done properly.</h2>
+        <span class="eyebrow">Services</span>
+        <h2 class="reveal">Concrete services for Brookings &amp; the surrounding area.</h2>
+        <p class="reveal reveal-delay-1">General categories of concrete work we handle — reach out to discuss the specifics of your project.</p>
       </div>
     </div>
     <div class="wrap">
       <div class="services-grid reveal">
         <div class="service-card">
-          <span class="service-num">01</span>
-          <h3>Residential Construction</h3>
-          <p>New builds, additions, and renovations for homeowners in the region.</p>
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none" role="img" aria-label="Driveway icon"><path d="M8 34 L14 6 H26 L32 34" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><line x1="12" y1="34" x2="14.5" y2="12" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 4"/><line x1="28" y1="34" x2="25.5" y2="12" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 4"/></svg>
+          <h3>Driveways</h3>
+          <p>Poured concrete driveways designed to hold up to daily use and Midwest weather.</p>
         </div>
         <div class="service-card">
-          <span class="service-num">02</span>
-          <h3>Commercial Construction</h3>
-          <p>Construction services for local businesses and commercial properties.</p>
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none" role="img" aria-label="Patio icon"><rect x="6" y="8" width="28" height="24" stroke="currentColor" stroke-width="2"/><line x1="6" y1="16" x2="34" y2="16" stroke="currentColor" stroke-width="1.2"/><line x1="6" y1="24" x2="34" y2="24" stroke="currentColor" stroke-width="1.2"/><line x1="16" y1="8" x2="16" y2="32" stroke="currentColor" stroke-width="1.2"/><line x1="26" y1="8" x2="26" y2="32" stroke="currentColor" stroke-width="1.2"/></svg>
+          <h3>Patios</h3>
+          <p>Outdoor concrete patios built for entertaining and everyday living space.</p>
         </div>
         <div class="service-card">
-          <span class="service-num">03</span>
-          <h3>Renovations &amp; Additions</h3>
-          <p>Updating and expanding existing structures with careful craftsmanship.</p>
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none" role="img" aria-label="Foundation icon"><rect x="7" y="20" width="26" height="12" stroke="currentColor" stroke-width="2"/><line x1="7" y1="20" x2="20" y2="8" stroke="currentColor" stroke-width="2"/><line x1="33" y1="20" x2="20" y2="8" stroke="currentColor" stroke-width="2"/><line x1="12" y1="32" x2="12" y2="20" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 3"/><line x1="28" y1="32" x2="28" y2="20" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 3"/></svg>
+          <h3>Foundations</h3>
+          <p>Structural concrete foundations poured to spec for residential and commercial builds.</p>
         </div>
         <div class="service-card">
-          <span class="service-num">04</span>
-          <h3>Project Consultation</h3>
-          <p>Straightforward guidance to help plan your next construction project.</p>
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none" role="img" aria-label="Flatwork icon"><rect x="5" y="15" width="30" height="10" stroke="currentColor" stroke-width="2"/><line x1="11" y1="15" x2="11" y2="25" stroke="currentColor" stroke-width="1.2"/><line x1="17" y1="15" x2="17" y2="25" stroke="currentColor" stroke-width="1.2"/><line x1="23" y1="15" x2="23" y2="25" stroke="currentColor" stroke-width="1.2"/><line x1="29" y1="15" x2="29" y2="25" stroke="currentColor" stroke-width="1.2"/></svg>
+          <h3>Flatwork</h3>
+          <p>Sidewalks, walkways, and slabs poured flat, level, and built to last.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none" role="img" aria-label="Commercial concrete icon"><rect x="6" y="10" width="10" height="22" stroke="currentColor" stroke-width="2"/><rect x="18" y="16" width="8" height="16" stroke="currentColor" stroke-width="2"/><rect x="28" y="6" width="7" height="26" stroke="currentColor" stroke-width="2"/></svg>
+          <h3>Commercial Concrete</h3>
+          <p>Concrete work for commercial properties and business buildouts.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 40 40" fill="none" role="img" aria-label="Concrete repair icon"><path d="M10 30 L18 18 L22 22 L30 10" stroke="currentColor" stroke-width="2" fill="none"/><path d="M6 34 H34" stroke="currentColor" stroke-width="2"/><path d="M14 34 L18 26 L22 30 L26 34" stroke="currentColor" stroke-width="1.4" stroke-dasharray="2 3"/></svg>
+          <h3>Concrete Repair</h3>
+          <p>Repair and replacement of cracked, settled, or damaged concrete.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow reveal">Testimonials</span>
+        <h2 class="reveal reveal-delay-1">What Brookings is saying.</h2>
+        <div class="testi-rating reveal reveal-delay-2">
+          <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="txt">5.0 stars &middot; 3 reviews on Google</span>
+        </div>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <span class="stars" aria-label="5 out of 5 stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <blockquote>&ldquo;Matt and his crew were great. Really good communication and the work was professionally done. Exceeded expectations and would highly recommend them for concrete work.&rdquo;</blockquote>
+          <cite>&mdash; Jason Nixon</cite>
+        </div>
+        <div class="testi-card reveal reveal-delay-1">
+          <span class="stars" aria-label="5 out of 5 stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <blockquote>&ldquo;Matt and his crew have done an excellent job for us on our restaurant buildout. Professional, conscientious, timely, organized, neat, and efficient are all words I would use to describe them.&rdquo;</blockquote>
+          <cite>&mdash; Michael Siegel</cite>
+        </div>
+        <div class="testi-card reveal reveal-delay-2">
+          <span class="stars" aria-label="5 out of 5 stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <blockquote>&ldquo;Awesome experience from start to finish with Matt and his team. Clear transparent pricing, great communication, and exceeded our expectations for our new patio.&rdquo;</blockquote>
+          <cite>&mdash; Peter Sandager</cite>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============ SERVICE AREA ============ -->
-  <section id="area">
+  <section id="area" class="on-light">
     <div class="wrap area-grid">
       <div class="area-copy">
         <span class="eyebrow reveal">Service Area</span>
         <div class="rule reveal"></div>
-        <h2 class="reveal">Brookings &amp; the surrounding region.</h2>
+        <h2 class="reveal">Brookings, SD &amp; the surrounding area.</h2>
         <p class="reveal reveal-delay-1">
-          Based in Brookings, SD, Buys Construction LLC serves clients
-          throughout the city and the surrounding area. Reach out to
-          confirm we cover your specific location.
+          Wagner Contracting is based in Brookings, South Dakota and serves
+          the city and surrounding area. Contact us to confirm coverage
+          for your specific location.
         </p>
         <ul class="area-list reveal reveal-delay-2">
           <li>Brookings, SD</li>
-          <li>Surrounding Region</li>
+          <li>Surrounding Area</li>
         </ul>
       </div>
-      <div class="area-visual reveal reveal-delay-1" role="img" aria-label="Placeholder graphic representing the Brookings, SD service region — to be replaced with a real map graphic">
-        <!-- PHOTO PLACEHOLDER: swap for an embedded map or custom map illustration -->
-        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="200" cy="200" r="30" fill="#c5a059"/>
-          <circle cx="200" cy="200" r="90" fill="none" stroke="#c5a059" stroke-width="1" opacity="0.5"/>
-          <circle cx="200" cy="200" r="150" fill="none" stroke="#c5a059" stroke-width="1" opacity="0.3"/>
-          <circle cx="200" cy="200" r="190" fill="none" stroke="#c5a059" stroke-width="1" opacity="0.15"/>
+      <div class="area-visual reveal reveal-delay-1" role="img" aria-label="Abstract graphic of concentric rings centered on Brookings, South Dakota, representing the general service area">
+        <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="150" cy="150" r="10" fill="#4a7fa5"/>
+          <circle cx="150" cy="150" r="60" fill="none" stroke="#4a7fa5" stroke-width="1.5" opacity="0.55"/>
+          <circle cx="150" cy="150" r="105" fill="none" stroke="#4a7fa5" stroke-width="1.5" opacity="0.32"/>
+          <circle cx="150" cy="150" r="140" fill="none" stroke="#4a7fa5" stroke-width="1.5" opacity="0.16"/>
         </svg>
       </div>
     </div>
@@ -726,29 +633,31 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow reveal">Contact</span>
-        <h2 class="reveal reveal-delay-1">Start your project.</h2>
+        <h2 class="reveal reveal-delay-1">Get a quote.</h2>
       </div>
 
       <div class="contact-grid">
         <div class="reveal">
           <div class="info-block">
             <h3>Call</h3>
-            <a class="big-link" href="tel:+16056900285">(605) 690-0285</a>
+            <a class="big-link" href="tel:+16056909058">(605) 690-9058</a>
           </div>
           <div class="info-block">
             <h3>Address</h3>
-            <p>1804 9th Avenue South<br>Brookings, SD 57006</p>
+            <p>114 1st St S<br>Brookings, SD 57006</p>
           </div>
           <div class="info-block">
-            <!-- HOURS-DISPLAY: confirm full weekly hours before publishing -->
-            <h3>Hours</h3>
-            <p>Monday&ndash;Friday: 8:00 AM &ndash; 5:00 PM<br>Saturday &ndash; Sunday: Closed</p>
-            <p style="font-size:0.78rem; margin-top:0.4rem; opacity:0.7;">Hours shown are provisional — please confirm before publishing.</p>
+            <h3>Service Area</h3>
+            <p>Brookings, SD and the surrounding area</p>
           </div>
         </div>
 
         <div class="reveal reveal-delay-1">
-          <form id="quoteForm" novalidate>
+          <form id="quoteForm">
+            <input type="hidden" name="access_key" value="7116fe83-c6cc-4b1d-b08a-bfe6a1a58cb9">
+            <input type="hidden" name="subject" value="New Quote Request — Wagner Contracting Website">
+            <input type="checkbox" name="botcheck" class="hp-field" tabindex="-1" autocomplete="off">
+
             <div class="field">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required autocomplete="name">
@@ -758,15 +667,18 @@
               <input type="tel" id="phone" name="phone" required autocomplete="tel">
             </div>
             <div class="field">
-              <label for="details">Project Description</label>
-              <textarea id="details" name="details" required></textarea>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
             </div>
-            <button type="submit" class="submit-btn">Request a Quote</button>
-            <p class="form-note">We'll get back to you as soon as we can. For faster contact, call (605) 690-0285.</p>
+            <div class="field">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" required placeholder="Tell us about your driveway, patio, foundation, or flatwork project."></textarea>
+            </div>
+            <button type="submit" class="btn btn-steel submit-btn" id="submitBtn">Request a Quote</button>
+            <p class="form-note">We'll get back to you as soon as we can. For faster contact, call (605) 690-9058.</p>
+
+            <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
           </form>
-          <div class="form-success" id="formSuccess">
-            Thank you — your request has been received. We'll be in touch soon.
-          </div>
         </div>
       </div>
     </div>
@@ -776,11 +688,11 @@
 
 <footer>
   <div class="wrap footer-grid">
-    <div class="footer-brand">BUYS <span>CONSTRUCTION</span> LLC</div>
+    <div class="footer-brand">WAGNER <span>CONTRACTING</span></div>
     <div class="footer-meta">
-      1804 9th Avenue South, Brookings, SD 57006<br>
-      <a href="tel:+16056900285">(605) 690-0285</a><br>
-      &copy; <span id="year"></span> Buys Construction LLC. All rights reserved.
+      114 1st St S, Brookings, SD 57006<br>
+      <a href="tel:+16056909058">(605) 690-9058</a><br>
+      &copy; <span id="year"></span> Wagner Contracting. All rights reserved.
     </div>
   </div>
 </footer>
@@ -811,22 +723,48 @@
     revealEls.forEach(function(el){ el.classList.add('in'); });
   }
 
-  // FORM SUBMIT HANDLER
-  // No backend/email endpoint was provided. This currently validates the
-  // fields client-side and shows a confirmation message only. Before
-  // launch, replace the body of this handler with a real submission
-  // (e.g. fetch() to a Formspree endpoint or a Vercel serverless function)
-  // so requests actually reach the business.
+  // FORM SUBMIT HANDLER — wired to Web3Forms (https://web3forms.com)
+  // This performs a real network request and reflects the actual
+  // success/error response — it does not fake a "message sent" state.
   var quoteForm = document.getElementById('quoteForm');
-  var formSuccess = document.getElementById('formSuccess');
-  quoteForm.addEventListener('submit', function(e){
+  var submitBtn = document.getElementById('submitBtn');
+  var formStatus = document.getElementById('formStatus');
+
+  quoteForm.addEventListener('submit', async function(e){
     e.preventDefault();
     if (!quoteForm.checkValidity()) {
       quoteForm.reportValidity();
       return;
     }
-    quoteForm.classList.add('submitted');
-    formSuccess.classList.add('show');
+
+    formStatus.classList.remove('show', 'success', 'error');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    try {
+      var formData = new FormData(quoteForm);
+      var response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+      var result = await response.json();
+
+      if (response.ok && result.success) {
+        formStatus.textContent = "Thanks — your request has been sent. We'll be in touch soon.";
+        formStatus.classList.add('show', 'success');
+        quoteForm.reset();
+      } else {
+        formStatus.textContent = (result && result.message) ? result.message : "Something went wrong sending your request. Please call (605) 690-9058 instead.";
+        formStatus.classList.add('show', 'error');
+      }
+    } catch (err) {
+      formStatus.textContent = "We couldn't send your request — please call (605) 690-9058 instead.";
+      formStatus.classList.add('show', 'error');
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Request a Quote';
+    }
   });
 </script>
 
