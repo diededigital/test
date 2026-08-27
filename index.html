@@ -1,772 +1,1016 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Buys Construction LLC | Custom Construction in Brookings, SD</title>
-<meta name="description" content="Buys Construction LLC provides trusted residential and commercial construction in Brookings, SD and the surrounding region. Request a quote today.">
-<meta name="robots" content="index, follow">
-
-<!--
-  ============================================================
-  DEVELOPER NOTES (remove before/after client review)
-  1. HOURS: Only "closes 5 PM, opens 8 AM" was provided. This build
-     assumes Mon–Fri, 8:00 AM–5:00 PM, closed Sat/Sun, as a
-     placeholder. CONFIRM full weekly hours with the client and
-     update both the visible Hours block (search "HOURS-DISPLAY")
-     and the JSON-LD "openingHoursSpecification" (search "HOURS-SCHEMA")
-     before publishing.
-  2. PHOTOGRAPHY: All hero/section imagery is abstract/geometric
-     CSS + SVG placeholder art (no stock photos used). Search
-     "PHOTO PLACEHOLDER" for each spot where real project photography,
-     a team photo, and a completed-project gallery should be swapped in.
-  3. FORM BACKEND: The quote request form currently only validates
-     client-side and shows a confirmation message — no email/CRM
-     endpoint was provided. Before launch, wire the form's JS submit
-     handler (search "FORM SUBMIT HANDLER") to a real backend such as
-     Formspree, a Vercel serverless function, or the client's CRM.
-  4. NO fabricated ratings, review counts, years-in-business, license
-     numbers, or named past projects appear anywhere on this page,
-     per instructions — only confirmed business information was used.
-  ============================================================
--->
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "GeneralContractor",
-  "name": "Buys Construction LLC",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "1804 9th Avenue South",
-    "addressLocality": "Brookings",
-    "addressRegion": "SD",
-    "postalCode": "57006",
-    "addressCountry": "US"
-  },
-  "telephone": "+1-605-690-0285",
-  "areaServed": {
-    "@type": "Place",
-    "name": "Brookings, SD and surrounding region"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-      "opens": "08:00",
-      "closes": "17:00"
-    }
-  ]
-}
-</script>
-<!-- HOURS-SCHEMA: verify days/times above against client-confirmed hours before publishing -->
-
+<title>Meadowlark Landscape &amp; Lawn Co. | Brookings, SD Landscaping &amp; Lawn Care</title>
+<meta name="description" content="Meadowlark Landscape & Lawn Co. provides landscape design, hardscaping, lawn care, irrigation, and snow removal in Brookings, SD and the surrounding area. Family-owned since 2012. Free consultations.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E">
 <style>
-  :root{
-    --black: #0b0a08;
-    --charcoal: #17150f;
-    --charcoal-2: #1f1c15;
-    --line: rgba(197,160,89,0.22);
-    --gold: #c5a059;
-    --gold-bright: #e2bd77;
-    --ivory: #ece7db;
-    --ivory-dim: #a8a293;
-    --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-    --sans: "Jost", "Helvetica Neue", Arial, sans-serif;
+  :root {
+    --green-900: #1b3a2b;
+    --green-800: #234a35;
+    --green-700: #2e6144;
+    --green-600: #3c7d56;
+    --green-500: #4f9968;
+    --green-100: #e7f2ea;
+    --gold-500: #d0a44c;
+    --gold-600: #b8893a;
+    --cream: #faf7f0;
+    --charcoal: #24261f;
+    --gray-600: #5c6058;
+    --gray-300: #d8d9d1;
+    --white: #ffffff;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(27, 58, 43, 0.12);
+    --shadow-sm: 0 4px 14px rgba(27, 58, 43, 0.08);
+    --max-w: 1180px;
+    font-size: 16px;
   }
 
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--black);
-    color:var(--ivory);
-    font-family:var(--sans);
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+    color: var(--charcoal);
+    background: var(--cream);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
   }
 
-  img{max-width:100%; display:block;}
-  a{color:inherit;}
-
-  .wrap{
-    max-width:1180px;
-    margin:0 auto;
-    padding:0 6vw;
+  h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--green-900);
+    line-height: 1.15;
+    font-weight: 700;
   }
 
-  h1,h2,h3{
-    font-family:var(--serif);
-    font-weight:600;
-    letter-spacing:0.01em;
-    color:var(--ivory);
+  h1 { font-size: clamp(2rem, 6vw, 3.4rem); }
+  h2 { font-size: clamp(1.6rem, 4.2vw, 2.4rem); }
+  h3 { font-size: 1.25rem; }
+
+  a { color: inherit; }
+
+  img, svg { max-width: 100%; display: block; }
+
+  .container {
+    max-width: var(--max-w);
+    margin: 0 auto;
+    padding: 0 1.25rem;
   }
 
-  .eyebrow{
-    font-family:var(--sans);
-    text-transform:uppercase;
-    letter-spacing:0.28em;
-    font-size:0.72rem;
-    color:var(--gold);
-    display:inline-flex;
-    align-items:center;
-    gap:0.8em;
-  }
-  .eyebrow::before{
-    content:"";
-    width:28px;
-    height:1px;
-    background:var(--gold);
-    display:inline-block;
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--gold-600);
+    margin-bottom: 0.6rem;
+    display: block;
   }
 
-  .rule{
-    width:56px;
-    height:1px;
-    background:linear-gradient(90deg, var(--gold), transparent);
-    margin:1.4rem 0;
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.9rem 1.7rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
   }
+  .btn:hover { transform: translateY(-2px); }
+
+  .btn-primary {
+    background: var(--gold-500);
+    color: var(--green-900);
+    box-shadow: 0 8px 20px rgba(208, 164, 76, 0.35);
+  }
+  .btn-primary:hover { background: var(--gold-600); }
+
+  .btn-outline {
+    background: transparent;
+    border-color: var(--white);
+    color: var(--white);
+  }
+  .btn-outline:hover { background: rgba(255,255,255,0.12); }
+
+  .btn-outline-dark {
+    background: transparent;
+    border-color: var(--green-700);
+    color: var(--green-700);
+  }
+  .btn-outline-dark:hover { background: var(--green-100); }
 
   /* ---------- Header ---------- */
-  header{
-    position:fixed;
-    top:0; left:0; right:0;
-    z-index:100;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:1.4rem 6vw;
-    background:linear-gradient(180deg, rgba(11,10,8,0.92), rgba(11,10,8,0));
-    transition:background 0.4s ease, padding 0.4s ease, backdrop-filter 0.4s ease;
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(250, 247, 240, 0.94);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--gray-300);
   }
-  header.scrolled{
-    background:rgba(11,10,8,0.86);
-    backdrop-filter:blur(10px);
-    padding:1rem 6vw;
-    border-bottom:1px solid var(--line);
+  .nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 1.25rem;
+    max-width: var(--max-w);
+    margin: 0 auto;
   }
-  .brand{
-    font-family:var(--serif);
-    font-size:1.25rem;
-    letter-spacing:0.05em;
-    text-decoration:none;
-    color:var(--ivory);
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--green-900);
+    text-decoration: none;
   }
-  .brand span{color:var(--gold);}
-  nav.primary{
-    display:flex;
-    align-items:center;
-    gap:2.2rem;
+  .logo-mark {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
   }
-  nav.primary a.navlink{
-    text-decoration:none;
-    font-size:0.82rem;
-    text-transform:uppercase;
-    letter-spacing:0.14em;
-    color:var(--ivory-dim);
-    transition:color 0.25s ease;
+  nav.primary-nav {
+    display: none;
+    gap: 1.75rem;
+    align-items: center;
   }
-  nav.primary a.navlink:hover{color:var(--gold-bright);}
-  .header-cta{
-    display:inline-flex;
-    align-items:center;
-    gap:0.5rem;
-    text-decoration:none;
-    border:1px solid var(--gold);
-    color:var(--gold-bright);
-    padding:0.55rem 1.2rem;
-    font-size:0.78rem;
-    letter-spacing:0.12em;
-    text-transform:uppercase;
-    transition:background 0.25s ease, color 0.25s ease;
+  nav.primary-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--green-800);
   }
-  .header-cta:hover{background:var(--gold); color:var(--black);}
-  @media (max-width:820px){
-    nav.primary a.navlink{display:none;}
+  nav.primary-nav a:hover { color: var(--gold-600); }
+  .nav-call {
+    display: none;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+    color: var(--green-900);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .menu-toggle {
+    display: inline-flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.4rem;
+  }
+  .menu-toggle svg { width: 26px; height: 26px; }
+
+  #mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 0.5rem 1.25rem 1.25rem;
+    background: var(--cream);
+    border-bottom: 1px solid var(--gray-300);
+  }
+  #mobile-menu.open { display: flex; }
+  #mobile-menu a {
+    padding: 0.7rem 0;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--green-800);
+    border-bottom: 1px solid var(--gray-300);
+  }
+  #mobile-menu a:last-child { border-bottom: none; }
+
+  @media (min-width: 900px) {
+    nav.primary-nav { display: flex; }
+    .nav-call { display: inline-flex; }
+    .menu-toggle { display: none; }
   }
 
   /* ---------- Hero ---------- */
-  .hero{
-    position:relative;
-    min-height:100svh;
-    display:flex;
-    align-items:center;
-    padding-top:6rem;
-    overflow:hidden;
-    border-bottom:1px solid var(--line);
+  .hero {
+    position: relative;
+    background: linear-gradient(160deg, var(--green-900), var(--green-700) 65%, var(--green-600));
+    color: var(--white);
+    overflow: hidden;
+    padding: 3.2rem 0 3.5rem;
   }
-  .hero-bg{
-    position:absolute;
-    inset:0;
-    z-index:0;
-    background:
-      radial-gradient(ellipse at 78% 18%, rgba(197,160,89,0.10), transparent 55%),
-      radial-gradient(ellipse at 10% 90%, rgba(197,160,89,0.06), transparent 50%),
-      linear-gradient(160deg, #0b0a08 0%, #141210 55%, #0b0a08 100%);
+  .hero-grid {
+    display: grid;
+    gap: 2.5rem;
+    align-items: center;
   }
-  /* PHOTO PLACEHOLDER: swap this SVG line-art for a full-bleed hero photograph
-     (e.g. a striking exterior shot of a completed build) when available. */
-  .hero-lines{
-    position:absolute; inset:0; z-index:1; opacity:0.5;
-    pointer-events:none;
+  @media (min-width: 900px) {
+    .hero-grid { grid-template-columns: 1.1fr 0.9fr; }
+    .hero { padding: 5rem 0 6rem; }
   }
-  .hero-lines svg{width:100%; height:100%;}
-  .hero-inner{
-    position:relative;
-    z-index:2;
-    width:100%;
+  .hero p.lead {
+    font-size: 1.15rem;
+    color: var(--green-100);
+    margin: 1.1rem 0 1.8rem;
+    max-width: 42ch;
   }
-  .hero-grid{
-    display:grid;
-    grid-template-columns:1.1fr 0.9fr;
-    gap:3rem;
-    align-items:end;
+  .hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
   }
-  .hero h1{
-    font-size:clamp(2.8rem, 7vw, 5.6rem);
-    line-height:1.02;
-    letter-spacing:0.005em;
+  .hero-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 2.2rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
   }
-  .hero h1 em{
-    font-style:normal;
-    color:var(--gold-bright);
+  .hero-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-size: 0.9rem;
+    color: var(--green-100);
+    font-weight: 600;
   }
-  .hero-sub{
-    font-size:1.05rem;
-    color:var(--ivory-dim);
-    max-width:32ch;
-    margin-top:1.3rem;
-  }
-  .hero-side{
-    border-left:1px solid var(--line);
-    padding-left:2rem;
-  }
-  .hero-side p{
-    color:var(--ivory-dim);
-    font-size:0.95rem;
-    max-width:34ch;
-  }
-  .cta-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:1rem;
-    margin-top:2.4rem;
-  }
-  .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:0.6rem;
-    padding:1rem 1.8rem;
-    font-size:0.82rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    text-decoration:none;
-    transition:all 0.28s ease;
-    border:1px solid transparent;
-  }
-  .btn-gold{
-    background:var(--gold);
-    color:var(--black);
-  }
-  .btn-gold:hover{background:var(--gold-bright); transform:translateY(-2px);}
-  .btn-outline{
-    border-color:var(--line);
-    color:var(--ivory);
-  }
-  .btn-outline:hover{border-color:var(--gold); color:var(--gold-bright);}
+  .hero-badge svg { width: 22px; height: 22px; flex-shrink: 0; color: var(--gold-500); }
 
-  @media (max-width:900px){
-    .hero-grid{grid-template-columns:1fr;}
-    .hero-side{border-left:none; border-top:1px solid var(--line); padding-left:0; padding-top:1.4rem;}
+  .hero-art {
+    position: relative;
+    aspect-ratio: 4/3;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
   }
 
-  .scroll-cue{
-    position:absolute;
-    bottom:2.2rem; left:6vw;
-    z-index:2;
-    display:flex; align-items:center; gap:0.8rem;
-    color:var(--ivory-dim);
-    font-size:0.72rem;
-    letter-spacing:0.2em;
-    text-transform:uppercase;
+  /* ---------- Trust strip ---------- */
+  .trust-strip {
+    background: var(--green-100);
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--gray-300);
   }
-  .scroll-cue::after{
-    content:"";
-    width:1px; height:34px;
-    background:linear-gradient(180deg, var(--gold), transparent);
-    animation:cue 2.2s ease-in-out infinite;
+  .trust-strip .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    text-align: center;
   }
-  @keyframes cue{
-    0%{transform:scaleY(0.2); transform-origin:top;}
-    50%{transform:scaleY(1); transform-origin:top;}
-    51%{transform-origin:bottom;}
-    100%{transform:scaleY(0.2); transform-origin:bottom;}
+  @media (min-width: 700px) {
+    .trust-strip .container { grid-template-columns: repeat(4, 1fr); }
   }
-
-  /* ---------- Reveal animation ---------- */
-  .reveal{
-    opacity:0;
-    transform:translateY(28px);
-    transition:opacity 0.9s cubic-bezier(.16,.8,.24,1), transform 0.9s cubic-bezier(.16,.8,.24,1);
+  .trust-stat .num {
+    font-family: Georgia, serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--green-800);
   }
-  .reveal.in{
-    opacity:1;
-    transform:translateY(0);
-  }
-  .reveal-delay-1{transition-delay:0.12s;}
-  .reveal-delay-2{transition-delay:0.24s;}
-  .reveal-delay-3{transition-delay:0.36s;}
-
-  @media (prefers-reduced-motion: reduce){
-    .reveal{opacity:1; transform:none; transition:none;}
-    html{scroll-behavior:auto;}
+  .trust-stat .label {
+    font-size: 0.82rem;
+    color: var(--gray-600);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
   }
 
-  /* ---------- Section shells ---------- */
-  section{
-    padding:7.5rem 0;
-    position:relative;
+  /* ---------- Section generic ---------- */
+  section { padding: 4rem 0; }
+  .section-head {
+    max-width: 640px;
+    margin: 0 auto 2.5rem;
+    text-align: center;
   }
-  .section-head{
-    max-width:640px;
-    margin-bottom:3.5rem;
-  }
-  .section-head h2{
-    font-size:clamp(2rem, 4vw, 2.9rem);
-    margin-top:0.6rem;
-  }
+  .section-head p { color: var(--gray-600); margin-top: 0.8rem; font-size: 1.05rem; }
 
-  /* ---------- About ---------- */
-  #about{
-    background:var(--charcoal);
-    border-bottom:1px solid var(--line);
+  /* ---------- Reviews ---------- */
+  .reviews-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
   }
-  .about-grid{
-    display:grid;
-    grid-template-columns:0.85fr 1.15fr;
-    gap:4rem;
-    align-items:center;
+  @media (min-width: 720px) {
+    .reviews-grid { grid-template-columns: repeat(3, 1fr); }
   }
-  /* PHOTO PLACEHOLDER: swap for a portrait-orientation jobsite or team photo */
-  .about-visual{
-    aspect-ratio:4/5;
-    position:relative;
-    background:
-      linear-gradient(155deg, #201c14 0%, #0e0c09 100%);
-    border:1px solid var(--line);
+  .review-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.6rem;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
   }
-  .about-visual svg{position:absolute; inset:0; width:100%; height:100%;}
-  .about-copy p{
-    color:var(--ivory-dim);
-    font-size:1.05rem;
-    max-width:52ch;
-    margin-bottom:1.1rem;
-  }
-  .about-copy p:last-child{margin-bottom:0;}
-  @media (max-width:860px){
-    .about-grid{grid-template-columns:1fr; gap:2.5rem;}
-    .about-visual{aspect-ratio:16/9;}
-  }
+  .stars { color: var(--gold-500); font-size: 1.05rem; letter-spacing: 0.1em; }
+  .review-card p.quote { color: var(--charcoal); font-size: 0.98rem; flex-grow: 1; }
+  .review-author { font-weight: 700; font-size: 0.9rem; color: var(--green-800); }
+  .review-loc { font-size: 0.8rem; color: var(--gray-600); }
 
   /* ---------- Services ---------- */
-  .services-grid{
-    display:grid;
-    grid-template-columns:repeat(4, 1fr);
-    gap:1px;
-    background:var(--line);
-    border:1px solid var(--line);
+  .services-grid {
+    display: grid;
+    gap: 1.4rem;
+    grid-template-columns: 1fr;
   }
-  .service-card{
-    background:var(--black);
-    padding:2.6rem 1.8rem;
-    display:flex;
-    flex-direction:column;
-    gap:0.9rem;
+  @media (min-width: 640px) {
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
   }
-  .service-num{
-    font-family:var(--serif);
-    color:var(--gold);
-    font-size:1.1rem;
+  @media (min-width: 980px) {
+    .services-grid { grid-template-columns: repeat(3, 1fr); }
   }
-  .service-card h3{
-    font-size:1.25rem;
-    font-weight:600;
+  .service-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.8rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-300);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
   }
-  .service-card p{
-    color:var(--ivory-dim);
-    font-size:0.92rem;
+  .service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow);
   }
-  @media (max-width:980px){
-    .services-grid{grid-template-columns:repeat(2, 1fr);}
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--green-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
   }
-  @media (max-width:560px){
-    .services-grid{grid-template-columns:1fr;}
+  .service-icon svg { width: 26px; height: 26px; color: var(--green-700); }
+  .service-card h3 { margin-bottom: 0.5rem; }
+  .service-card p { color: var(--gray-600); font-size: 0.95rem; }
+
+  /* ---------- Why choose us ---------- */
+  .why-section { background: var(--green-900); color: var(--white); }
+  .why-section h2 { color: var(--white); }
+  .why-section .section-head p { color: var(--green-100); }
+  .why-grid {
+    display: grid;
+    gap: 1.6rem;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 700px) {
+    .why-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  .why-item {
+    display: flex;
+    gap: 1rem;
+    background: rgba(255,255,255,0.06);
+    padding: 1.4rem;
+    border-radius: var(--radius);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  .why-item svg { width: 30px; height: 30px; color: var(--gold-500); flex-shrink: 0; }
+  .why-item h3 { color: var(--white); font-size: 1.1rem; margin-bottom: 0.3rem; }
+  .why-item p { color: var(--green-100); font-size: 0.92rem; }
+
+  /* ---------- Gallery ---------- */
+  .gallery-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 700px) {
+    .gallery-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+  .gallery-item {
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    aspect-ratio: 1/1;
   }
 
-  /* ---------- Service Area ---------- */
-  #area{
-    background:var(--charcoal);
-    border-top:1px solid var(--line);
-    border-bottom:1px solid var(--line);
+  /* ---------- Service area ---------- */
+  .area-section .container {
+    display: grid;
+    gap: 2rem;
+    align-items: center;
   }
-  .area-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:4rem;
-    align-items:center;
+  @media (min-width: 900px) {
+    .area-section .container { grid-template-columns: 1fr 1fr; }
   }
-  /* PHOTO PLACEHOLDER: could be replaced with a simple embedded map or
-     custom-illustrated regional map graphic */
-  .area-visual{
-    aspect-ratio:1/1;
-    position:relative;
-    border:1px solid var(--line);
-    background:radial-gradient(circle at 50% 50%, rgba(197,160,89,0.08), transparent 60%);
+  .area-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+    margin-top: 1.2rem;
   }
-  .area-visual svg{width:100%; height:100%;}
-  .area-copy p{color:var(--ivory-dim); max-width:46ch; margin-bottom:1rem; font-size:1.02rem;}
-  .area-list{
-    list-style:none;
-    display:flex;
-    flex-wrap:wrap;
-    gap:0.6rem 0.9rem;
-    margin-top:1.6rem;
+  .area-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: var(--green-800);
+    font-size: 0.95rem;
   }
-  .area-list li{
-    font-size:0.78rem;
-    letter-spacing:0.08em;
-    text-transform:uppercase;
-    color:var(--gold-bright);
-    border:1px solid var(--line);
-    padding:0.5rem 0.9rem;
-  }
-  @media (max-width:860px){
-    .area-grid{grid-template-columns:1fr; gap:2.5rem;}
+  .area-list svg { width: 16px; height: 16px; color: var(--gold-600); flex-shrink: 0; }
+  .map-art {
+    background: var(--green-100);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
   }
 
   /* ---------- Contact ---------- */
-  #contact{
-    background:var(--black);
+  .contact-section { background: var(--green-100); }
+  .contact-grid {
+    display: grid;
+    gap: 2rem;
   }
-  .contact-grid{
-    display:grid;
-    grid-template-columns:0.9fr 1.1fr;
-    gap:4rem;
-    align-items:start;
+  @media (min-width: 900px) {
+    .contact-grid { grid-template-columns: 0.85fr 1.15fr; }
   }
-  .info-block{margin-bottom:2.2rem;}
-  .info-block h3{
-    font-size:0.75rem;
-    letter-spacing:0.2em;
-    text-transform:uppercase;
-    color:var(--gold);
-    font-family:var(--sans);
-    font-weight:500;
-    margin-bottom:0.6rem;
+  .contact-info-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.8rem;
+    box-shadow: var(--shadow-sm);
   }
-  .info-block .big-link{
-    font-family:var(--serif);
-    font-size:2.1rem;
-    text-decoration:none;
-    color:var(--ivory);
-    transition:color 0.25s ease;
+  .contact-info-card h3 { margin-bottom: 1rem; }
+  .info-row {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 1.1rem;
+    align-items: flex-start;
   }
-  .info-block .big-link:hover{color:var(--gold-bright);}
-  .info-block p{color:var(--ivory-dim); font-size:0.98rem;}
+  .info-row svg { width: 22px; height: 22px; color: var(--green-700); flex-shrink: 0; margin-top: 2px; }
+  .info-row a { text-decoration: none; font-weight: 700; color: var(--green-900); }
+  .info-row .label { font-size: 0.82rem; color: var(--gray-600); font-weight: 600; text-transform: uppercase; letter-spacing: 0.03em; }
+  .hours-table { width: 100%; font-size: 0.92rem; margin-top: 0.3rem; border-collapse: collapse; }
+  .hours-table td { padding: 0.25rem 0; color: var(--charcoal); }
+  .hours-table td:last-child { text-align: right; font-weight: 600; }
 
-  form{
-    background:var(--charcoal);
-    border:1px solid var(--line);
-    padding:2.6rem;
+  .form-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.8rem;
+    box-shadow: var(--shadow-sm);
   }
-  .field{margin-bottom:1.4rem;}
-  .field label{
-    display:block;
-    font-size:0.72rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--ivory-dim);
-    margin-bottom:0.5rem;
+  .form-row { margin-bottom: 1.1rem; }
+  .form-row label {
+    display: block;
+    font-weight: 700;
+    font-size: 0.88rem;
+    margin-bottom: 0.4rem;
+    color: var(--green-900);
   }
-  .field input, .field textarea{
-    width:100%;
-    background:var(--black);
-    border:1px solid var(--line);
-    color:var(--ivory);
-    padding:0.85rem 1rem;
-    font-family:var(--sans);
-    font-size:0.95rem;
+  .form-row input,
+  .form-row select,
+  .form-row textarea {
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    border-radius: 8px;
+    border: 1.5px solid var(--gray-300);
+    font-size: 0.98rem;
+    font-family: inherit;
+    background: var(--cream);
   }
-  .field input:focus, .field textarea:focus{
-    outline:none;
-    border-color:var(--gold);
+  .form-row input:focus,
+  .form-row select:focus,
+  .form-row textarea:focus {
+    outline: none;
+    border-color: var(--green-600);
   }
-  .field textarea{resize:vertical; min-height:110px;}
-  .submit-btn{
-    width:100%;
-    border:none;
-    cursor:pointer;
-    background:var(--gold);
-    color:var(--black);
-    padding:1rem;
-    font-size:0.82rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    transition:background 0.25s ease;
+  .form-two-col {
+    display: grid;
+    gap: 1.1rem;
   }
-  .submit-btn:hover{background:var(--gold-bright);}
-  .form-note{
-    font-size:0.8rem;
-    color:var(--ivory-dim);
-    margin-top:0.9rem;
-    text-align:center;
+  @media (min-width: 560px) {
+    .form-two-col { grid-template-columns: 1fr 1fr; }
   }
-  .form-success{
-    display:none;
-    border:1px solid var(--gold);
-    color:var(--gold-bright);
-    padding:1.4rem;
-    font-size:0.92rem;
-    text-align:center;
+  #form-status {
+    margin-top: 1rem;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    display: none;
   }
-  .form-success.show{display:block;}
-  form.submitted .field, form.submitted .submit-btn, form.submitted .form-note{display:none;}
+  #form-status.success { display: block; background: #e2f3e5; color: #1f5c33; border: 1px solid #b9dfc2; }
+  #form-status.error { display: block; background: #fbe6e6; color: #8a2b2b; border: 1px solid #f0bcbc; }
+  #form-status.sending { display: block; background: var(--green-100); color: var(--green-800); border: 1px solid var(--gray-300); }
 
-  @media (max-width:900px){
-    .contact-grid{grid-template-columns:1fr; gap:2.5rem;}
+  .submit-btn {
+    width: 100%;
+    border: none;
+    padding: 0.95rem;
+    border-radius: 999px;
+    background: var(--green-700);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.15s ease;
   }
+  .submit-btn:hover { background: var(--green-800); }
+  .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+  /* ---------- CTA banner ---------- */
+  .cta-banner {
+    background: linear-gradient(120deg, var(--gold-600), var(--gold-500));
+    color: var(--green-900);
+    text-align: center;
+    padding: 3rem 0;
+  }
+  .cta-banner h2 { color: var(--green-900); margin-bottom: 0.8rem; }
+  .cta-banner p { margin-bottom: 1.6rem; font-weight: 600; }
 
   /* ---------- Footer ---------- */
-  footer{
-    border-top:1px solid var(--line);
-    padding:3rem 0 2.4rem;
-    background:var(--black);
+  footer {
+    background: var(--green-900);
+    color: var(--green-100);
+    padding: 3rem 0 1.5rem;
   }
-  .footer-grid{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    gap:1.5rem;
-    align-items:center;
+  .footer-grid {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
   }
-  .footer-brand{
-    font-family:var(--serif);
-    font-size:1.15rem;
+  @media (min-width: 700px) {
+    .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; }
   }
-  .footer-brand span{color:var(--gold);}
-  .footer-meta{
-    color:var(--ivory-dim);
-    font-size:0.85rem;
-    line-height:1.9;
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--white);
+    margin-bottom: 0.7rem;
   }
-  .footer-meta a{text-decoration:none; color:var(--ivory-dim);}
-  .footer-meta a:hover{color:var(--gold-bright);}
+  .footer-logo svg { width: 32px; height: 32px; }
+  footer h4 {
+    color: var(--white);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.9rem;
+  }
+  footer ul { list-style: none; }
+  footer ul li { margin-bottom: 0.55rem; }
+  footer a { text-decoration: none; color: var(--green-100); font-size: 0.92rem; }
+  footer a:hover { color: var(--gold-500); }
+  .footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    text-align: center;
+    font-size: 0.82rem;
+    color: rgba(231, 242, 234, 0.65);
+  }
+  .skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    background: var(--white);
+    color: var(--green-900);
+    padding: 0.7rem 1rem;
+    z-index: 100;
+  }
+  .skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+  }
 </style>
 </head>
 <body>
 
-<header id="siteHeader">
-  <a href="#top" class="brand">BUYS <span>CONSTRUCTION</span></a>
-  <nav class="primary">
-    <a class="navlink" href="#about">About</a>
-    <a class="navlink" href="#services">Services</a>
-    <a class="navlink" href="#area">Service Area</a>
-    <a class="navlink" href="#contact">Contact</a>
-    <a class="header-cta" href="tel:+16056900285">Call Now</a>
-  </nav>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header>
+  <div class="nav-wrap">
+    <a href="#top" class="logo" aria-label="Meadowlark Landscape & Lawn Co. home">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#234a35"/>
+        <path d="M24 34c-6-3-10-8.5-10-14.5C14 13 18 9 24 9s10 4 10 10.5C34 25.5 30 31 24 34Z" fill="#d0a44c"/>
+        <path d="M24 34c-4-6-4-16 0-24" stroke="#1b3a2b" stroke-width="1.4" fill="none"/>
+      </svg>
+      Meadowlark Landscape &amp; Lawn Co.
+    </a>
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#gallery">Our Work</a>
+      <a href="#area">Service Area</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-call" href="tel:+16055550148">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      (605) 555-0148
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#1b3a2b" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div id="mobile-menu">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#gallery">Our Work</a>
+    <a href="#area">Service Area</a>
+    <a href="#contact">Contact</a>
+    <a href="tel:+16055550148">Call (605) 555-0148</a>
+  </div>
 </header>
 
-<main id="top">
+<main id="main">
 
-  <!-- ============ HERO ============ -->
+  <!-- HERO -->
+  <div id="top"></div>
   <section class="hero">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-lines" aria-hidden="true">
-      <!-- PHOTO PLACEHOLDER: decorative architectural line-art standing in
-           for a hero photograph; swap the whole .hero-bg / .hero-lines pair
-           for a full-bleed <img> of a completed project when available -->
-      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-        <g stroke="#c5a059" stroke-width="1" fill="none" opacity="0.35">
-          <line x1="0" y1="120" x2="1440" y2="120"/>
-          <line x1="0" y1="780" x2="1440" y2="780"/>
-          <polyline points="120,900 120,300 520,300 520,80"/>
-          <polyline points="1440,650 980,650 980,220 1320,220 1320,0"/>
-          <rect x="1160" y="380" width="180" height="260"/>
-          <line x1="700" y1="0" x2="700" y2="900" stroke-dasharray="2 10" opacity="0.5"/>
-        </g>
-      </svg>
-    </div>
-
-    <div class="wrap hero-inner">
-      <div class="hero-grid">
-        <div>
-          <span class="eyebrow reveal in">Brookings, South Dakota</span>
-          <h1 class="reveal in reveal-delay-1">Built on<br><em>Craftsmanship.</em></h1>
-          <p class="hero-sub reveal in reveal-delay-2">
-            Buys Construction LLC delivers residential and commercial
-            construction across Brookings and the surrounding region —
-            grounded in careful work and a straightforward approach.
-          </p>
-          <div class="cta-row reveal in reveal-delay-3">
-            <a href="#contact" class="btn btn-gold">Request a Quote</a>
-            <a href="tel:+16056900285" class="btn btn-outline">Call (605) 690-0285</a>
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow" style="color:#e6c374;">Brookings, SD &middot; Family-Owned Since 2012</span>
+        <h1 style="color:#fff;">Landscapes Brookings Families Actually Get to Enjoy</h1>
+        <p class="lead">From weekly mowing to full-yard makeovers, Meadowlark designs and maintains outdoor spaces that hold up to South Dakota seasons &mdash; without the back-and-forth headaches.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+          <a href="tel:+16055550148" class="btn btn-outline">Call (605) 555-0148</a>
+        </div>
+        <div class="hero-badges">
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.26L21 9l-5 4.36L17.5 21 12 17.27 6.5 21 8 13.36 3 9l6.1-.74z"/></svg>
+            4.9 stars &middot; 128 reviews
+          </div>
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/></svg>
+            Licensed &amp; Insured
+          </div>
+          <div class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            14 Years in Business
           </div>
         </div>
-        <div class="hero-side reveal in reveal-delay-3">
-          <p>Residential and commercial projects, handled with the same
-          attention to detail from first conversation to final walkthrough.</p>
-        </div>
       </div>
-    </div>
-
-    <div class="scroll-cue" aria-hidden="true">Scroll</div>
-  </section>
-
-  <!-- ============ ABOUT ============ -->
-  <section id="about">
-    <div class="wrap about-grid">
-      <div class="about-visual reveal" role="img" aria-label="Placeholder graphic representing Buys Construction's craftsmanship — to be replaced with a real jobsite or team photograph">
-        <!-- PHOTO PLACEHOLDER: replace SVG with real jobsite/team photo -->
-        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="400" height="500" fill="#14110c"/>
-          <g stroke="#c5a059" stroke-width="1" fill="none" opacity="0.55">
-            <line x1="40" y1="460" x2="40" y2="120"/>
-            <line x1="40" y1="120" x2="200" y2="40"/>
-            <line x1="200" y1="40" x2="360" y2="120"/>
-            <line x1="360" y1="120" x2="360" y2="460"/>
-            <line x1="40" y1="460" x2="360" y2="460"/>
-            <line x1="40" y1="120" x2="360" y2="120"/>
-            <line x1="200" y1="40" x2="200" y2="500" stroke-dasharray="2 8" opacity="0.4"/>
-          </g>
+      <div class="hero-art">
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a landscaped front yard with a stone walkway, trimmed shrubs, and a young tree">
+          <defs>
+            <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#cfe6da"/>
+              <stop offset="100%" stop-color="#e9f2ea"/>
+            </linearGradient>
+            <linearGradient id="grassGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#5fa476"/>
+              <stop offset="100%" stop-color="#3c7d56"/>
+            </linearGradient>
+          </defs>
+          <rect width="480" height="360" fill="url(#skyGrad)"/>
+          <rect y="210" width="480" height="150" fill="url(#grassGrad)"/>
+          <path d="M0 210 Q120 180 240 208 T480 205 V360 H0 Z" fill="#4f9968"/>
+          <path d="M60 320 C110 260 170 260 220 320 L200 320 C170 280 130 280 80 320 Z" fill="#d8cdb0"/>
+          <path d="M220 320 C260 300 300 300 340 320 L330 336 C300 320 270 320 232 336 Z" fill="#d8cdb0"/>
+          <ellipse cx="360" cy="235" rx="46" ry="34" fill="#2e6144"/>
+          <ellipse cx="392" cy="220" rx="34" ry="26" fill="#3c7d56"/>
+          <rect x="355" y="255" width="10" height="30" fill="#6b4a2b"/>
+          <circle cx="120" cy="230" r="24" fill="#3c7d56"/>
+          <circle cx="150" cy="238" r="18" fill="#4f9968"/>
+          <rect x="20" y="180" width="100" height="60" rx="6" fill="#f4ead9"/>
+          <polygon points="10,182 70,140 130,182" fill="#8a5a3a"/>
+          <rect x="60" y="205" width="24" height="35" fill="#6b4a2b"/>
+          <circle cx="410" cy="70" r="26" fill="#f6d78c" opacity="0.85"/>
         </svg>
       </div>
-      <div class="about-copy">
-        <span class="eyebrow reveal">About</span>
-        <div class="rule reveal"></div>
-        <h2 class="reveal">Trusted local craftsmanship.</h2>
-        <p class="reveal reveal-delay-1">
-          Buys Construction LLC is a construction company based at 1804 9th
-          Avenue South in Brookings, South Dakota. We work with property
-          owners on residential and commercial projects, bringing a
-          steady, detail-oriented approach to every job.
-        </p>
-        <p class="reveal reveal-delay-2">
-          Our focus stays on clear communication and sound construction —
-          the kind of work that speaks for itself once it's finished.
-        </p>
-      </div>
     </div>
   </section>
 
-  <!-- ============ SERVICES ============ -->
-  <section id="services">
-    <div class="wrap">
+  <!-- TRUST STRIP -->
+  <div class="trust-strip">
+    <div class="container">
+      <div class="trust-stat">
+        <div class="num">14+</div>
+        <div class="label">Years in Business</div>
+      </div>
+      <div class="trust-stat">
+        <div class="num">4.9★</div>
+        <div class="label">Average Rating</div>
+      </div>
+      <div class="trust-stat">
+        <div class="num">128</div>
+        <div class="label">Verified Reviews</div>
+      </div>
+      <div class="trust-stat">
+        <div class="num">900+</div>
+        <div class="label">Yards Serviced</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="container">
       <div class="section-head">
-        <span class="eyebrow reveal">Services</span>
-        <h2 class="reveal reveal-delay-1">Construction, done properly.</h2>
+        <span class="eyebrow">What Neighbors Say</span>
+        <h2>Trusted by homeowners across Brookings County</h2>
       </div>
-    </div>
-    <div class="wrap">
-      <div class="services-grid reveal">
-        <div class="service-card">
-          <span class="service-num">01</span>
-          <h3>Residential Construction</h3>
-          <p>New builds, additions, and renovations for homeowners in the region.</p>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="quote">"They redid our front bed and walkway in under a week and it looks like a completely different house. Crew showed up on time every single day."</p>
+          <div>
+            <div class="review-author">Karen Ostlund</div>
+            <div class="review-loc">Brookings, SD</div>
+          </div>
         </div>
-        <div class="service-card">
-          <span class="service-num">02</span>
-          <h3>Commercial Construction</h3>
-          <p>Construction services for local businesses and commercial properties.</p>
+        <div class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="quote">"We switched to Meadowlark for weekly mowing two summers ago and haven't looked back. Easy billing, no-shows are basically zero."</p>
+          <div>
+            <div class="review-author">Derek Value</div>
+            <div class="review-loc">Volga, SD</div>
+          </div>
         </div>
-        <div class="service-card">
-          <span class="service-num">03</span>
-          <h3>Renovations &amp; Additions</h3>
-          <p>Updating and expanding existing structures with careful craftsmanship.</p>
-        </div>
-        <div class="service-card">
-          <span class="service-num">04</span>
-          <h3>Project Consultation</h3>
-          <p>Straightforward guidance to help plan your next construction project.</p>
+        <div class="review-card">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="quote">"Called about a sprinkler line that broke in April and they had someone out within two days. Fair price, explained everything clearly."</p>
+          <div>
+            <div class="review-author">Priya Anand</div>
+            <div class="review-loc">Brookings, SD</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ SERVICE AREA ============ -->
-  <section id="area">
-    <div class="wrap area-grid">
-      <div class="area-copy">
-        <span class="eyebrow reveal">Service Area</span>
-        <div class="rule reveal"></div>
-        <h2 class="reveal">Brookings &amp; the surrounding region.</h2>
-        <p class="reveal reveal-delay-1">
-          Based in Brookings, SD, Buys Construction LLC serves clients
-          throughout the city and the surrounding area. Reach out to
-          confirm we cover your specific location.
-        </p>
-        <ul class="area-list reveal reveal-delay-2">
-          <li>Brookings, SD</li>
-          <li>Surrounding Region</li>
+  <!-- SERVICES -->
+  <section id="services" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What We Do</span>
+        <h2>Full-service landscaping, built for SD winters and summers alike</h2>
+        <p>Pick a single project or set up year-round maintenance &mdash; we scope it to your property and your budget.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20h18M6 20V10l6-6 6 6v10"/><path d="M9 20v-6h6v6"/></svg>
+          </div>
+          <h3>Lawn Care &amp; Maintenance</h3>
+          <p>Weekly or bi-weekly mowing, edging, fertilization, and weed control tailored to your grass type.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg>
+          </div>
+          <h3>Landscape Design</h3>
+          <p>Custom planting plans, beds, and layouts designed around how your family actually uses the yard.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+          </div>
+          <h3>Hardscaping</h3>
+          <p>Patios, walkways, retaining walls, and fire pits built with materials rated for freeze-thaw cycles.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C8 6 6 10 6 13a6 6 0 0 0 12 0c0-3-2-7-6-11z"/></svg>
+          </div>
+          <h3>Tree &amp; Shrub Care</h3>
+          <p>Pruning, shaping, and health treatments to keep established trees and shrubs strong for decades.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3>Irrigation Systems</h3>
+          <p>Sprinkler installation, spring start-up, mid-season repairs, and fall blowout service.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20M4.5 4.5l15 15M19.5 4.5l-15 15"/></svg>
+          </div>
+          <h3>Snow Removal</h3>
+          <p>Seasonal contracts for driveways and walkways, so you're not out there at 6am with a shovel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why" class="why-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" style="color:#e6c374;">Why Brookings Chooses Meadowlark</span>
+        <h2>The differences you'll actually notice</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <div>
+            <h3>Locally Owned &amp; Operated</h3>
+            <p>Founded in 2012 by a Brookings native &mdash; we know which plants survive a zone 4 winter and which don't.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a8 8 0 0 1 16 0c0 4.5-4 8-8 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div>
+            <h3>Eco-Conscious Practices</h3>
+            <p>Low-impact fertilization, native plant options, and water-smart irrigation design as standard, not upsells.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+          <div>
+            <h3>Satisfaction Guarantee</h3>
+            <p>If a scheduled visit doesn't meet spec, we return within 48 hours to make it right &mdash; no extra charge.</p>
+          </div>
+        </div>
+        <div class="why-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+          <div>
+            <h3>Transparent, Upfront Pricing</h3>
+            <p>Every estimate is itemized before work starts &mdash; no surprise line items on the invoice.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" style="background:var(--white);">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Recent Work</span>
+        <h2>A few projects from around Brookings County</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Illustration of a stone patio with a fire pit">
+            <rect width="200" height="200" fill="#e7f2ea"/>
+            <rect y="120" width="200" height="80" fill="#4f9968"/>
+            <circle cx="100" cy="140" r="28" fill="#c9bfa4"/>
+            <circle cx="100" cy="140" r="14" fill="#e08a3c"/>
+            <rect x="20" y="150" width="50" height="10" fill="#a99b78"/>
+            <rect x="130" y="150" width="50" height="10" fill="#a99b78"/>
+          </svg>
+        </div>
+        <div class="gallery-item">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Illustration of a curved garden walkway with flower beds">
+            <rect width="200" height="200" fill="#eef4ea"/>
+            <path d="M0 200 C60 140 140 220 200 150 V200 Z" fill="#d8cdb0"/>
+            <circle cx="40" cy="60" r="10" fill="#d0a44c"/>
+            <circle cx="65" cy="80" r="8" fill="#e6c374"/>
+            <circle cx="150" cy="50" r="10" fill="#c9647a"/>
+            <rect y="150" width="200" height="50" fill="#3c7d56"/>
+          </svg>
+        </div>
+        <div class="gallery-item">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Illustration of a freshly mowed striped lawn">
+            <rect width="200" height="200" fill="#eaf3ec"/>
+            <rect y="90" width="200" height="20" fill="#4f9968"/>
+            <rect y="110" width="200" height="20" fill="#5fa476"/>
+            <rect y="130" width="200" height="20" fill="#4f9968"/>
+            <rect y="150" width="200" height="20" fill="#5fa476"/>
+            <rect y="170" width="200" height="30" fill="#4f9968"/>
+          </svg>
+        </div>
+        <div class="gallery-item">
+          <svg viewBox="0 0 200 200" role="img" aria-label="Illustration of a young tree freshly planted with mulch ring">
+            <rect width="200" height="200" fill="#e7f2ea"/>
+            <rect y="150" width="200" height="50" fill="#3c7d56"/>
+            <ellipse cx="100" cy="150" rx="36" ry="10" fill="#6b4a2b"/>
+            <rect x="95" y="90" width="10" height="60" fill="#6b4a2b"/>
+            <circle cx="100" cy="75" r="38" fill="#2e6144"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section id="area" class="area-section" style="background:var(--cream);">
+    <div class="container">
+      <div>
+        <span class="eyebrow">Where We Work</span>
+        <h2>Proudly serving Brookings and the surrounding towns</h2>
+        <p style="color:var(--gray-600); margin-top:0.8rem;">Based on 6th Street in Brookings, our crews cover a roughly 20-mile radius. Outside that range? Call us &mdash; we take on select projects further out.</p>
+        <ul class="area-list">
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> Brookings</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> Volga</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> Aurora</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> Elkton</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> White</li>
+          <li><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg> Bushnell</li>
         </ul>
       </div>
-      <div class="area-visual reveal reveal-delay-1" role="img" aria-label="Placeholder graphic representing the Brookings, SD service region — to be replaced with a real map graphic">
-        <!-- PHOTO PLACEHOLDER: swap for an embedded map or custom map illustration -->
-        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="200" cy="200" r="30" fill="#c5a059"/>
-          <circle cx="200" cy="200" r="90" fill="none" stroke="#c5a059" stroke-width="1" opacity="0.5"/>
-          <circle cx="200" cy="200" r="150" fill="none" stroke="#c5a059" stroke-width="1" opacity="0.3"/>
-          <circle cx="200" cy="200" r="190" fill="none" stroke="#c5a059" stroke-width="1" opacity="0.15"/>
+      <div class="map-art">
+        <svg viewBox="0 0 400 300" role="img" aria-label="Stylized map showing Meadowlark's Brookings, SD service area">
+          <rect width="400" height="300" rx="14" fill="#e7f2ea"/>
+          <path d="M40 60 L360 40 L380 220 L60 260 Z" fill="none" stroke="#a9c8b3" stroke-width="2" stroke-dasharray="6 6"/>
+          <circle cx="200" cy="150" r="10" fill="#b8893a"/>
+          <circle cx="200" cy="150" r="18" fill="none" stroke="#b8893a" stroke-width="2"/>
+          <text x="215" y="155" font-family="Georgia, serif" font-size="14" fill="#1b3a2b">Brookings, SD</text>
+          <circle cx="120" cy="90" r="5" fill="#3c7d56"/>
+          <circle cx="300" cy="100" r="5" fill="#3c7d56"/>
+          <circle cx="270" cy="210" r="5" fill="#3c7d56"/>
+          <circle cx="100" cy="200" r="5" fill="#3c7d56"/>
         </svg>
       </div>
     </div>
   </section>
 
-  <!-- ============ CONTACT ============ -->
-  <section id="contact">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow reveal">Contact</span>
-        <h2 class="reveal reveal-delay-1">Start your project.</h2>
-      </div>
+  <!-- CTA BANNER -->
+  <div class="cta-banner">
+    <div class="container">
+      <h2>Ready for a yard you don't have to think about?</h2>
+      <p>Free, no-pressure estimates &mdash; most quotes are turned around within 48 hours.</p>
+      <a href="#contact" class="btn" style="background:var(--green-900); color:#fff;">Request Your Free Estimate</a>
+    </div>
+  </div>
 
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Request a free estimate</h2>
+        <p>Tell us a bit about your project and we'll follow up within one business day.</p>
+      </div>
       <div class="contact-grid">
-        <div class="reveal">
-          <div class="info-block">
-            <h3>Call</h3>
-            <a class="big-link" href="tel:+16056900285">(605) 690-0285</a>
+        <div class="contact-info-card">
+          <h3>Contact Details</h3>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <div class="label">Phone</div>
+              <a href="tel:+16055550148">(605) 555-0148</a>
+            </div>
           </div>
-          <div class="info-block">
-            <h3>Address</h3>
-            <p>1804 9th Avenue South<br>Brookings, SD 57006</p>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <div class="label">Address</div>
+              <div style="font-weight:700; color:var(--green-900);">1420 6th Street<br>Brookings, SD 57006</div>
+            </div>
           </div>
-          <div class="info-block">
-            <!-- HOURS-DISPLAY: confirm full weekly hours before publishing -->
-            <h3>Hours</h3>
-            <p>Monday&ndash;Friday: 8:00 AM &ndash; 5:00 PM<br>Saturday &ndash; Sunday: Closed</p>
-            <p style="font-size:0.78rem; margin-top:0.4rem; opacity:0.7;">Hours shown are provisional — please confirm before publishing.</p>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <div style="width:100%;">
+              <div class="label" style="margin-bottom:0.4rem;">Hours</div>
+              <table class="hours-table">
+                <tr><td>Mon &ndash; Fri</td><td>7:00am &ndash; 6:00pm</td></tr>
+                <tr><td>Saturday</td><td>8:00am &ndash; 2:00pm</td></tr>
+                <tr><td>Sunday</td><td>Closed</td></tr>
+              </table>
+            </div>
           </div>
         </div>
 
-        <div class="reveal reveal-delay-1">
-          <form id="quoteForm" novalidate>
-            <div class="field">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" required autocomplete="name">
+        <div class="form-card">
+          <h3>Send Us a Message</h3>
+          <form id="contact-form">
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+            <input type="hidden" name="access_key" value="WEB3FORMS_ACCESS_KEY_PLACEHOLDER">
+            <input type="hidden" name="subject" value="New estimate request from Meadowlark Landscape site">
+            <input type="hidden" name="from_name" value="Meadowlark Landscape & Lawn Co. Website">
+
+            <div class="form-two-col">
+              <div class="form-row">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name">
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(605) 555-0100">
+              </div>
             </div>
-            <div class="field">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
             </div>
-            <div class="field">
-              <label for="details">Project Description</label>
-              <textarea id="details" name="details" required></textarea>
+
+            <div class="form-row">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option>Lawn Care &amp; Maintenance</option>
+                <option>Landscape Design</option>
+                <option>Hardscaping</option>
+                <option>Tree &amp; Shrub Care</option>
+                <option>Irrigation Systems</option>
+                <option>Snow Removal</option>
+                <option>Not Sure / Other</option>
+              </select>
             </div>
-            <button type="submit" class="submit-btn">Request a Quote</button>
-            <p class="form-note">We'll get back to you as soon as we can. For faster contact, call (605) 690-0285.</p>
+
+            <div class="form-row">
+              <label for="message">Project Details</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell us about your property and what you're looking for..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submit-btn">Request Free Estimate</button>
+            <div id="form-status" role="status" aria-live="polite"></div>
           </form>
-          <div class="form-success" id="formSuccess">
-            Thank you — your request has been received. We'll be in touch soon.
-          </div>
         </div>
       </div>
     </div>
@@ -775,58 +1019,139 @@
 </main>
 
 <footer>
-  <div class="wrap footer-grid">
-    <div class="footer-brand">BUYS <span>CONSTRUCTION</span> LLC</div>
-    <div class="footer-meta">
-      1804 9th Avenue South, Brookings, SD 57006<br>
-      <a href="tel:+16056900285">(605) 690-0285</a><br>
-      &copy; <span id="year"></span> Buys Construction LLC. All rights reserved.
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="23" fill="#2e6144"/>
+            <path d="M24 34c-6-3-10-8.5-10-14.5C14 13 18 9 24 9s10 4 10 10.5C34 25.5 30 31 24 34Z" fill="#d0a44c"/>
+          </svg>
+          Meadowlark Landscape &amp; Lawn Co.
+        </div>
+        <p style="font-size:0.9rem; color:var(--green-100); max-width:32ch;">Family-owned landscaping and lawn care serving Brookings, SD since 2012.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#gallery">Our Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+16055550148">(605) 555-0148</a></li>
+          <li><a href="mailto:info@meadowlarklandscapesd.example">info@meadowlarklandscapesd.example</a></li>
+          <li>1420 6th Street<br>Brookings, SD 57006</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span id="year"></span> Meadowlark Landscape &amp; Lawn Co., 1420 6th Street, Brookings, SD 57006 &middot; (605) 555-0148</div>
+      <div>Example site by Diede Digital &mdash; this business is fictional and created for portfolio purposes only.</div>
     </div>
   </div>
 </footer>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Meadowlark Landscape & Lawn Co.",
+  "image": "",
+  "description": "Family-owned landscaping and lawn care company in Brookings, SD offering lawn maintenance, landscape design, hardscaping, tree and shrub care, irrigation, and snow removal.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1420 6th Street",
+    "addressLocality": "Brookings",
+    "addressRegion": "SD",
+    "postalCode": "57006",
+    "addressCountry": "US"
+  },
+  "telephone": "+1-605-555-0148",
+  "priceRange": "$$",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "08:00",
+      "closes": "14:00"
+    }
+  ],
+  "areaServed": ["Brookings, SD", "Volga, SD", "Aurora, SD", "Elkton, SD", "White, SD", "Bushnell, SD"],
+  "foundingDate": "2012",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "128"
+  }
+}
+</script>
+
 <script>
-  // Header background on scroll
-  var header = document.getElementById('siteHeader');
-  window.addEventListener('scroll', function(){
-    header.classList.toggle('scrolled', window.scrollY > 40);
+  // Mobile menu toggle
+  var menuToggle = document.getElementById('menu-toggle');
+  var mobileMenu = document.getElementById('mobile-menu');
+  menuToggle.addEventListener('click', function () {
+    var isOpen = mobileMenu.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+  mobileMenu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      mobileMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
   });
 
-  // Footer year
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // Scroll-triggered reveal animations
-  var revealEls = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
-    revealEls.forEach(function(el){ io.observe(el); });
-  } else {
-    revealEls.forEach(function(el){ el.classList.add('in'); });
-  }
+  // Web3Forms submission
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('form-status');
+  var submitBtn = document.getElementById('submit-btn');
 
-  // FORM SUBMIT HANDLER
-  // No backend/email endpoint was provided. This currently validates the
-  // fields client-side and shows a confirmation message only. Before
-  // launch, replace the body of this handler with a real submission
-  // (e.g. fetch() to a Formspree endpoint or a Vercel serverless function)
-  // so requests actually reach the business.
-  var quoteForm = document.getElementById('quoteForm');
-  var formSuccess = document.getElementById('formSuccess');
-  quoteForm.addEventListener('submit', function(e){
+  form.addEventListener('submit', function (e) {
     e.preventDefault();
-    if (!quoteForm.checkValidity()) {
-      quoteForm.reportValidity();
-      return;
-    }
-    quoteForm.classList.add('submitted');
-    formSuccess.classList.add('show');
+
+    status.className = 'sending';
+    status.textContent = 'Sending your request...';
+    submitBtn.disabled = true;
+
+    var formData = new FormData(form);
+    var payload = Object.fromEntries(formData);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        if (data.success) {
+          status.className = 'success';
+          status.textContent = "Thanks! Your request has been sent — we'll follow up within one business day.";
+          form.reset();
+        } else {
+          status.className = 'error';
+          status.textContent = data.message || 'Something went wrong. Please call us at (605) 555-0148 instead.';
+        }
+      })
+      .catch(function () {
+        status.className = 'error';
+        status.textContent = 'Network error — please try again or call us at (605) 555-0148.';
+      })
+      .finally(function () {
+        submitBtn.disabled = false;
+      });
   });
 </script>
 
